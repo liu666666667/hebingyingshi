@@ -346,5 +346,19 @@
     "disabled": 8,
     "total_sites": 1500,
     "stable_sites": 1725
+  },
+  "subscribe_links": {
+    "stable_pages": "https://liu666666667.github.io/hebingyingshi/output/stable.json",
+    "final_pages": "https://liu666666667.github.io/hebingyingshi/output/final.json",
+    "stable_raw": "https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/output/stable.json",
+    "live_pages": "https://liu666666667.github.io/hebingyingshi/output/live.m3u",
+    "live_raw": "https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/output/live.m3u"
+  },
+  "subscribe_reachable": {
+    "stable_pages": true,
+    "final_pages": true,
+    "stable_raw": true,
+    "live_pages": true,
+    "live_raw": true
   }
 }
