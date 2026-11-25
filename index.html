@@ -53,12 +53,14 @@
   <div class="panel"><ul class="cl" id="cl"></ul></div>
 
   <script>
-  let DATA=null, curSort='sites', asc=false;
+  let DATA=/*__DATA__*/null, curSort='sites', asc=false;
   async function load(){
-    try{
-      const r=await fetch('status.json?cb='+Date.now(),{cache:'no-store'});
-      DATA=await r.json();
-    }catch(e){document.getElementById('updated').textContent='状态加载失败';return;}
+    if(!DATA){
+      try{
+        const r=await fetch('status.json?cb='+Date.now(),{cache:'no-store'});
+        DATA=await r.json();
+      }catch(e){document.getElementById('updated').textContent='状态加载失败';return;}
+    }
     const s=DATA.stats||{};
     document.getElementById('updated').textContent='更新于 '+(DATA.updated_at||'-');
     const cards=[

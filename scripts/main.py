@@ -302,15 +302,25 @@ def main():
     log("状态: 站点%d 稳定%d 拦截%d 隔离%d 失效%d 骤降%.1f%%" %
         (len(all_sites), len(stable_sites), blocked_count, len(isolated_sites), len(unavail_list), drop_pct))
 
-    # 复制 index.html（若存在）
-    idx_src = os.path.join(ROOT, "index.html")
-    if os.path.exists(idx_src):
-        with open(idx_src, encoding="utf-8") as f:
-            html = f.read()
-        with open(os.path.join(OUTPUT, "index.html"), "w", encoding="utf-8") as f:
-            f.write(html)
-        with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as f:
-            f.write(html)
+    # 生成自包含 index.html：把 status 数据内嵌进 /*__DATA__*/ 占位符，
+    # 页面打开即有数据，不再依赖二次 fetch status.json（避免缓存/跨域导致空白）。
+    tpl_src = os.path.join(ROOT, "_index_template.html")
+    if not os.path.exists(tpl_src):
+        tpl_src = os.path.join(ROOT, "index.html")
+    if os.path.exists(tpl_src):
+        with open(tpl_src, encoding="utf-8") as f:
+            tpl = f.read()
+        import re as _re
+        # 确保有配对的结束标记
+        if "/*__END_DATA__*/" not in tpl:
+            tpl = tpl.replace("/*__DATA__*/null", "/*__DATA__*/null/*__END_DATA__*/", 1)
+        embedded = json.dumps(status, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+        html_out = _re.sub(r"/\*__DATA__\*/.*?/\*__END_DATA__\*/",
+                           "/*__DATA__*/" + embedded + "/*__END_DATA__*/", tpl, count=1, flags=_re.S)
+        # 根 index.html 和 output/index.html 都写自包含版本
+        for dst in (os.path.join(OUTPUT, "index.html"), os.path.join(ROOT, "index.html")):
+            with open(dst, "w", encoding="utf-8") as f:
+                f.write(html_out)
 
     P.save_state(state)
     log("完成:", now_str())
