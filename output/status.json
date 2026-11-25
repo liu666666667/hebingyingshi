@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-25 23:11:22",
+  "updated_at": "2026-11-25 23:30:19",
   "repo": "liu666666667/hebingyingshi",
   "stats": {
     "total_sites": 1500,
-    "stable_sites": 1725,
+    "stable_sites": 1500,
     "trusted_lines": 20,
     "discovered_lines": 20,
     "blocked": 56,
@@ -20,7 +20,7 @@
       "name": "小鱼干",
       "tier": "trusted",
       "origin": "apibackup",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 49,
       "url": "http://xhztv.top/dc/小鱼干/api.json"
     },
@@ -28,31 +28,31 @@
       "name": "4K小盒子",
       "tier": "trusted",
       "origin": "apibackup",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 53,
       "url": "http://xhztv.top/4k.json"
-    },
-    {
-      "name": "小盒子单仓",
-      "tier": "trusted",
-      "origin": "apibackup",
-      "ok_days": 2,
-      "sites": 54,
-      "url": "http://xhztv.top/xhz"
     },
     {
       "name": "老刘备",
       "tier": "trusted",
       "origin": "apibackup",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 234,
       "url": "https://raw.liucn.cc/box/m.json"
+    },
+    {
+      "name": "小盒子单仓",
+      "tier": "trusted",
+      "origin": "apibackup",
+      "ok_days": 3,
+      "sites": 54,
+      "url": "http://xhztv.top/xhz"
     },
     {
       "name": "X4菠菜园",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 52,
       "url": "https://0.12yue.de5.net/5/x4.json"
     },
@@ -60,31 +60,31 @@
       "name": "X4少儿频道",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 25,
       "url": "https://0.12yue.de5.net/5/tv少儿.json"
-    },
-    {
-      "name": "分享者",
-      "tier": "trusted",
-      "origin": "yscconfig",
-      "ok_days": 2,
-      "sites": 168,
-      "url": "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
     },
     {
       "name": "俊佬",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 24,
       "url": "http://home.jundie.top:81/top98.json"
+    },
+    {
+      "name": "分享者",
+      "tier": "trusted",
+      "origin": "yscconfig",
+      "ok_days": 3,
+      "sites": 168,
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
     },
     {
       "name": "凯弟多仓",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 63,
       "url": "https://jihulab.com/jyqhkd1/jk/-/raw/main/8.json"
     },
@@ -92,7 +92,7 @@
       "name": "dxawi",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 48,
       "url": "https://dxawi.github.io/0/0.json"
     },
@@ -100,7 +100,7 @@
       "name": "摸鱼儿",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 104,
       "url": "https://www.y456y.com"
     },
@@ -108,7 +108,7 @@
       "name": "创享影视",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 12,
       "url": "https://ys.cxkjg.cn/api/provide/tvbox"
     },
@@ -116,7 +116,7 @@
       "name": "伦理接口",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 24,
       "url": "http://47.96.82.41:5188/rose/18/xgg.json"
     },
@@ -124,7 +124,7 @@
       "name": "无名",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 111,
       "url": "https://6800.kstore.vip/fish.json"
     },
@@ -132,7 +132,7 @@
       "name": "影仓",
       "tier": "trusted",
       "origin": "zhuiju",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 28,
       "url": "http://124.71.19.220/c/1"
     },
@@ -140,7 +140,7 @@
       "name": "",
       "tier": "trusted",
       "origin": "yingshicang",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 192,
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/fantaiying/tv.json"
     },
@@ -148,7 +148,7 @@
       "name": "小盒子多仓",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 423,
       "url": "http://xhztv.top/dc"
     },
@@ -156,7 +156,7 @@
       "name": "GitLab 多仓（推荐）",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 696,
       "url": "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json"
     },
@@ -164,7 +164,7 @@
       "name": "挺好分享多仓",
       "tier": "trusted",
       "origin": "yscconfig",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 251,
       "url": "http://ztha.top/TVBox/GYCK.json"
     },
@@ -172,55 +172,55 @@
       "name": "拾光多仓",
       "tier": "trusted",
       "origin": "apibackup",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 752,
       "url": "http://xmbjm.fh4u.org/dc.txt"
-    },
-    {
-      "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.jso",
-      "tier": "discovered",
-      "origin": "yingshi_auto",
-      "ok_days": 2,
-      "sites": 1516,
-      "url": "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.json"
     },
     {
       "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.j",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 181,
       "url": "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.json"
+    },
+    {
+      "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.jso",
+      "tier": "discovered",
+      "origin": "yingshi_auto",
+      "ok_days": 3,
+      "sites": 1516,
+      "url": "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.json"
     },
     {
       "name": "raw.githubusercontent.com/qist/tvbox/master/jsm.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 161,
       "url": "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json"
-    },
-    {
-      "name": "qist.wyfc.qzz.io/jsm.json",
-      "tier": "discovered",
-      "origin": "yingshi_auto",
-      "ok_days": 2,
-      "sites": 161,
-      "url": "https://qist.wyfc.qzz.io/jsm.json"
     },
     {
       "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-Py站.j",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 148,
       "url": "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-Py站.json"
+    },
+    {
+      "name": "qist.wyfc.qzz.io/jsm.json",
+      "tier": "discovered",
+      "origin": "yingshi_auto",
+      "ok_days": 3,
+      "sites": 161,
+      "url": "https://qist.wyfc.qzz.io/jsm.json"
     },
     {
       "name": "raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 115,
       "url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json"
     },
@@ -228,7 +228,7 @@
       "name": "jihulab.com/jyqhkd1/kai/-/raw/main/机缘巧盒凯弟.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 63,
       "url": "https://jihulab.com/jyqhkd1/kai/-/raw/main/机缘巧盒凯弟.json"
     },
@@ -236,7 +236,7 @@
       "name": "clun.top/fun.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 87,
       "url": "https://clun.top/fun.json"
     },
@@ -244,23 +244,15 @@
       "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.j",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 55,
       "url": "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.json"
-    },
-    {
-      "name": "play.iptv365.org/香雅情/api.json",
-      "tier": "discovered",
-      "origin": "yingshi_auto",
-      "ok_days": 2,
-      "sites": 55,
-      "url": "https://play.iptv365.org/香雅情/api.json"
     },
     {
       "name": "raw.githubusercontent.com/dxyc0922/Tvbox4.x_api/refs/heads/main/",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 50,
       "url": "https://raw.githubusercontent.com/dxyc0922/Tvbox4.x_api/refs/heads/main/接口.json"
     },
@@ -268,63 +260,71 @@
       "name": "raw.githubusercontent.com/qist/tvbox/master/fty.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 50,
       "url": "https://raw.githubusercontent.com/qist/tvbox/master/fty.json"
+    },
+    {
+      "name": "play.iptv365.org/香雅情/api.json",
+      "tier": "discovered",
+      "origin": "yingshi_auto",
+      "ok_days": 3,
+      "sites": 55,
+      "url": "https://play.iptv365.org/香雅情/api.json"
     },
     {
       "name": "raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 49,
       "url": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json"
-    },
-    {
-      "name": "raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/js",
-      "tier": "discovered",
-      "origin": "yingshi_auto",
-      "ok_days": 2,
-      "sites": 36,
-      "url": "https://raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/json/config.json"
-    },
-    {
-      "name": "jihulab.com/jyqhkd/kd/-/raw/main/kai.json",
-      "tier": "discovered",
-      "origin": "yingshi_auto",
-      "ok_days": 2,
-      "sites": 28,
-      "url": "https://jihulab.com/jyqhkd/kd/-/raw/main/kai.json"
     },
     {
       "name": "11405.kstore.space/xiaye/qk4k.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 43,
       "url": "https://11405.kstore.space/xiaye/qk4k.json"
     },
     {
-      "name": "0.wudaozhe.net/5/tv少儿.json",
+      "name": "raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/js",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
-      "sites": 25,
-      "url": "https://0.wudaozhe.net/5/tv少儿.json"
+      "ok_days": 3,
+      "sites": 36,
+      "url": "https://raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/json/config.json"
     },
     {
       "name": "ztha.top/TVBox/thdjk.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 46,
       "url": "https://ztha.top/TVBox/thdjk.json"
+    },
+    {
+      "name": "jihulab.com/jyqhkd/kd/-/raw/main/kai.json",
+      "tier": "discovered",
+      "origin": "yingshi_auto",
+      "ok_days": 3,
+      "sites": 28,
+      "url": "https://jihulab.com/jyqhkd/kd/-/raw/main/kai.json"
+    },
+    {
+      "name": "0.wudaozhe.net/5/tv少儿.json",
+      "tier": "discovered",
+      "origin": "yingshi_auto",
+      "ok_days": 3,
+      "sites": 25,
+      "url": "https://0.wudaozhe.net/5/tv少儿.json"
     },
     {
       "name": "www.yingm.cc/dm/dm.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 27,
       "url": "https://www.yingm.cc/dm/dm.json"
     },
@@ -332,7 +332,7 @@
       "name": "raw.githubusercontent.com/noimank/tvbox/main/tvboxmuti.json",
       "tier": "discovered",
       "origin": "yingshi_auto",
-      "ok_days": 2,
+      "ok_days": 3,
       "sites": 696,
       "url": "https://raw.githubusercontent.com/noimank/tvbox/main/tvboxmuti.json"
     }
@@ -345,20 +345,6 @@
     "isolated": 19,
     "disabled": 8,
     "total_sites": 1500,
-    "stable_sites": 1725
-  },
-  "subscribe_links": {
-    "stable_pages": "https://liu666666667.github.io/hebingyingshi/output/stable.json",
-    "final_pages": "https://liu666666667.github.io/hebingyingshi/output/final.json",
-    "stable_raw": "https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/output/stable.json",
-    "live_pages": "https://liu666666667.github.io/hebingyingshi/output/live.m3u",
-    "live_raw": "https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/output/live.m3u"
-  },
-  "subscribe_reachable": {
-    "stable_pages": true,
-    "final_pages": true,
-    "stable_raw": true,
-    "live_pages": true,
-    "live_raw": true
+    "stable_sites": 1500
   }
 }
