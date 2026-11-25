@@ -16,81 +16,6 @@
     "origin": "apibackup"
   },
   {
-    "name": "肥猫",
-    "urls": [
-      "http://肥猫.net/tv",
-      "http://肥猫.com/",
-      "https://6296.kstore.vip/facat.json",
-      "http://肥猫.net/"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "小鱼干",
-    "urls": [
-      "http://xhztv.top/dc/小鱼干/api.json"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "小盒子单仓",
-    "urls": [
-      "http://xhztv.top/xhz"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "4K小盒子",
-    "urls": [
-      "http://xhztv.top/4k.json"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "老刘备",
-    "urls": [
-      "https://raw.liucn.cc/box/m.json"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "小马",
-    "urls": [
-      "https://szyyds.cn/tv/x.json"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "香雅情",
-    "urls": [
-      "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "摸鱼",
-    "urls": [
-      "http://我不是.摸鱼儿.com"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
-    "name": "拾光多仓",
-    "urls": [
-      "http://xmbjm.fh4u.org/dc.txt"
-    ],
-    "tier": "trusted",
-    "origin": "apibackup"
-  },
-  {
     "name": "饭太硬",
     "urls": [
       "http://www.饭太硬.net/tv",
@@ -99,8 +24,7 @@
       "http://fty.888484.xyz/tv",
       "http://fty.333232.xyz/tv",
       "http://www.饭太硬.cc/tv",
-      "http://www.饭太硬.xyz/tv",
-      "https://www.饭太硬.cc"
+      "http://www.饭太硬.xyz/tv"
     ],
     "tier": "trusted",
     "origin": "apibackup"
@@ -144,25 +68,11 @@
     "origin": "apibackup"
   },
   {
-    "name": "X4更新专用接口",
+    "name": "肥猫",
     "urls": [
-      "https://0.12yue.de5.net/0/666"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "X4菠菜园",
-    "urls": [
-      "https://0.12yue.de5.net/5/x4.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "X4少儿频道",
-    "urls": [
-      "https://0.12yue.de5.net/5/tv少儿.json"
+      "http://肥猫.net/tv",
+      "http://肥猫.com/",
+      "https://6296.kstore.vip/facat.json"
     ],
     "tier": "trusted",
     "origin": "yscconfig"
@@ -172,11 +82,23 @@
     "urls": [
       "https://d.kstore.dev/download/9280/wex.json",
       "https://9280.kstore.vip/newwex.json",
-      "http://new.王二小放牛娃.top",
-      "https://9280.kstore.vip/aiwex.json",
-      "https://9280.kstore.space/aiwex.json",
-      "http://tvbox.王二小放牛娃.top",
-      "https://www.王二小放牛娃.top"
+      "http://new.王二小放牛娃.top"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "老刘备",
+    "urls": [
+      "https://raw.liucn.cc/box/m.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "小马",
+    "urls": [
+      "https://szyyds.cn/tv/x.json"
     ],
     "tier": "trusted",
     "origin": "yscconfig"
@@ -191,9 +113,26 @@
     "origin": "yscconfig"
   },
   {
-    "name": "小盒子多仓",
+    "name": "4K小盒子",
     "urls": [
-      "http://xhztv.top/dc"
+      "http://xhztv.top/4k.json",
+      "http://xhztv.top/xhz"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "小盒子单仓",
+    "urls": [
+      "http://xhztv.top/xhz"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "拾光多仓",
+    "urls": [
+      "http://xmbjm.fh4u.org/dc.txt"
     ],
     "tier": "trusted",
     "origin": "yscconfig"
@@ -207,194 +146,17 @@
     "origin": "yscconfig"
   },
   {
-    "name": "网络接口",
+    "name": "肥猫",
     "urls": [
-      "https://8815.kstore.vip/tvbox/wmz"
+      "http://肥猫.net/"
     ],
     "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "虎斑",
-    "urls": [
-      "http://hb.小虎斑.site:25252/仅供测试"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "东篱",
-    "urls": [
-      "https://16151.kstore.space"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "天微多仓",
-    "urls": [
-      "https://tvkj.top/DC.txt"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "无邪",
-    "urls": [
-      "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/yx.txt"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "分享者",
-    "urls": [
-      "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "高天流云",
-    "urls": [
-      "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "俊佬",
-    "urls": [
-      "http://home.jundie.top:81/top98.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "fastly-jsdelivr",
-    "urls": [
-      "https://fastly.jsdelivr.net/gh/liu673cn/box@main/m.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "pastebin",
-    "urls": [
-      "https://pastebin.com/raw/gtbKvnE1"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "GitLab 多仓（推荐）",
-    "urls": [
-      "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "无邪多仓（推荐）",
-    "urls": [
-      "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/jh.txt"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "艾丝沐",
-    "urls": [
-      "http://tv.aisimu.cn/tv/all.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "应用多多",
-    "urls": [
-      "https://jihulab.com/duomv/apps/-/raw/main/fast.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "凯弟多仓",
-    "urls": [
-      "https://jihulab.com/jyqhkd1/jk/-/raw/main/8.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "z.qiqiv.cn",
-    "urls": [
-      "http://z.qiqiv.cn/123"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "dxawi",
-    "urls": [
-      "https://dxawi.github.io/0/0.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
+    "origin": "zhuiju"
   },
   {
     "name": "摸鱼儿",
     "urls": [
-      "https://www.y456y.com",
       "http://www.y456y.com"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "创享影视",
-    "urls": [
-      "https://ys.cxkjg.cn/api/provide/tvbox"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "影仓",
-    "urls": [
-      "https://124.71.19.220/"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "伦理接口",
-    "urls": [
-      "http://47.96.82.41:5188/rose/18/xgg.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "无名",
-    "urls": [
-      "https://6800.kstore.vip/fish.json"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "小盒子",
-    "urls": [
-      "https://www.xhztv.pro/"
-    ],
-    "tier": "trusted",
-    "origin": "yscconfig"
-  },
-  {
-    "name": "肥猫",
-    "urls": [
-      "http://肥猫.net/"
     ],
     "tier": "trusted",
     "origin": "zhuiju"
@@ -408,6 +170,14 @@
     "origin": "zhuiju"
   },
   {
+    "name": "创享影视",
+    "urls": [
+      "https://ys.cxkjg.cn/api/provide/tvbox"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
     "name": "影仓",
     "urls": [
       "http://124.71.19.220/c/1"
@@ -416,9 +186,41 @@
     "origin": "zhuiju"
   },
   {
+    "name": "伦理接口",
+    "urls": [
+      "http://47.96.82.41:5188/rose/18/xgg.json"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
     "name": "嗷呜",
     "urls": [
       "http://itv666.cc/aowu/config.webp"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
+    "name": "无名",
+    "urls": [
+      "https://6800.kstore.vip/fish.json"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
+    "name": "小盒子多仓",
+    "urls": [
+      "http://xhztv.top/dc"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
+    "name": "小盒子",
+    "urls": [
+      "https://www.xhztv.pro/"
     ],
     "tier": "trusted",
     "origin": "zhuiju"
@@ -683,9 +485,27 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "home.jundie.top:81/top98.json",
+    "urls": [
+      "http://home.jundie.top:81/top98.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "raw.githubusercontent.com/noimank/tvbox/main/tvboxmuti.json",
     "urls": [
       "https://raw.githubusercontent.com/noimank/tvbox/main/tvboxmuti.json"
+    ],
+    "type": "multi",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json",
+    "urls": [
+      "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json"
     ],
     "type": "multi",
     "tier": "discovered",
