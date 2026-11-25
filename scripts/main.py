@@ -304,7 +304,7 @@ def main():
 
     # 生成自包含 index.html：把 status 数据内嵌进 /*__DATA__*/ 占位符，
     # 页面打开即有数据，不再依赖二次 fetch status.json（避免缓存/跨域导致空白）。
-    tpl_src = os.path.join(ROOT, "_index_template.html")
+    tpl_src = os.path.join(ROOT, "index.template.html")
     if not os.path.exists(tpl_src):
         tpl_src = os.path.join(ROOT, "index.html")
     if os.path.exists(tpl_src):
