@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视汇总 · hebingyingshi</title>
+<style>
+  :root{--bg:#0f1115;--card:#181b22;--card2:#20242d;--txt:#e6e8ee;--sub:#9aa3b2;--acc:#4ade80;--warn:#f59e0b;--bad:#ef4444;--blue:#60a5fa;--line:#2a2f3a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;padding:24px;max-width:1180px;margin:0 auto}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  h1{font-size:26px;margin-bottom:4px} h2{font-size:18px;margin:26px 0 12px;padding-left:10px;border-left:3px solid var(--acc)}
+  .sub{color:var(--sub);font-size:13px;margin-bottom:20px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .card .n{font-size:28px;font-weight:700;color:var(--acc)} .card .l{font-size:12px;color:var(--sub);margin-top:4px}
+  .card.warn .n{color:var(--warn)} .card.bad .n{color:var(--bad)} .card.blue .n{color:var(--blue)}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:14px}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .btn{display:inline-block;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:14px}
+  .btn.ok{border-color:var(--acc)} .btn.dead{opacity:.45;border-color:var(--bad)}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)} th{color:var(--sub);font-weight:600;cursor:pointer;user-select:none}
+  tr:hover td{background:var(--card2)}
+  .tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px} .t-trusted{background:#12331f;color:var(--acc)} .t-discovered{background:#1c2a3a;color:var(--blue)}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc);margin-right:6px}
+  code{background:var(--card2);padding:2px 6px;border-radius:5px;font-size:12px;word-break:break-all}
+  .muted{color:var(--sub);font-size:12px} .alert{background:#3a1d1d;border:1px solid var(--bad);color:#fca5a5;padding:12px;border-radius:10px;margin-top:12px}
+  .cl li{margin:4px 0}
+</style>
+</head>
+<body>
+  <h1>影视汇总中心</h1>
+  <div class="sub">四可信源 + 自动发现 · 每日汇总去重去广告 · 失效隔离 · <span id="updated">加载中…</span></div>
+
+  <div id="alertBox"></div>
+
+  <h2>概览</h2>
+  <div class="cards" id="cards"></div>
+
+  <h2>订阅地址（自动探测可用）</h2>
+  <div class="panel"><div class="links" id="links"><span class="muted">探测中…</span></div>
+    <p class="muted" style="margin-top:10px">复制地址到影视仓「配置地址」导入即可。stable=稳定版，final=全量版，live=直播。</p>
+  </div>
+
+  <h2>线路状态</h2>
+  <div class="panel" style="overflow-x:auto"><table id="tbl">
+    <thead><tr><th onclick="sortBy('name')">线路</th><th onclick="sortBy('tier')">来源</th><th onclick="sortBy('sites')">站点数</th><th onclick="sortBy('ok_days')">存活天数</th><th>地址</th></tr></thead>
+    <tbody></tbody>
+  </table></div>
+
+  <h2>今日变更</h2>
+  <div class="panel"><ul class="cl" id="cl"></ul></div>
+
+  <script>
+  let DATA=null, curSort='sites', asc=false;
+  async function load(){
+    try{
+      const r=await fetch('status.json?cb='+Date.now(),{cache:'no-store'});
+      DATA=await r.json();
+    }catch(e){document.getElementById('updated').textContent='状态加载失败';return;}
+    const s=DATA.stats||{};
+    document.getElementById('updated').textContent='更新于 '+(DATA.updated_at||'-');
+    const cards=[
+      ['站点总数',s.total_sites,''],['稳定版',s.stable_sites,''],
+      ['直播频道',s.live_channels,'blue'],['可信线路',s.trusted_lines,''],
+      ['发现线路',s.discovered_lines,'blue'],['拦截广告/有害',s.blocked,'warn'],
+      ['隔离待定',s.isolated,'warn'],['禁用线路',s.disabled,'bad']
+    ];
+    document.getElementById('cards').innerHTML=cards.map(c=>
+      '<div class="card '+c[2]+'"><div class="n">'+(c[1]??0)+'</div><div class="l">'+c[0]+'</div></div>').join('');
+    // 骤降告警
+    if(s.drop_alert){document.getElementById('alertBox').innerHTML=
+      '<div class="alert">⚠ 站点数较昨日下降 '+s.drop_pct+'%，上游可能异常，请检查。</div>';}
+    // 订阅地址
+    const L=DATA.subscribe_links||{}, R=DATA.subscribe_reachable||{};
+    const names={stable_pages:'稳定版 · Pages',final_pages:'全量版 · Pages',stable_raw:'稳定版 · Raw（备用）',live_pages:'直播 · Pages',live_raw:'直播 · Raw（备用）'};
+    const keys=Object.keys(L);
+    document.getElementById('links').innerHTML=keys.length?keys.map(k=>
+      '<a class="btn '+((R[k])?'ok':'dead')+'" href="'+L[k]+'" target="_blank" rel="noreferrer">'+
+      '<span class="dot" style="'+(R[k]?'':'background:#ef4444')+'"></span>'+(names[k]||k)+
+      (R[k]?'':' <span class="muted">(待生效)</span>')+'</a>').join(''):
+      '<span class="muted">暂无地址</span>';
+    // 变更
+    const c=DATA.changelog||{};
+    document.getElementById('cl').innerHTML=[
+      '新增站点：<b>'+(c.added??0)+'</b>','移除站点：<b>'+(c.removed??0)+'</b>',
+      '复活源：<b>'+(c.revived??0)+'</b>','隔离待定：<b>'+(c.isolated??0)+'</b>',
+      '禁用线路：<b>'+(c.disabled??0)+'</b>'
+    ].map(x=>'<li>'+x+'</li>').join('');
+    render();
+  }
+  function sortBy(k){if(curSort===k)asc=!asc;else{curSort=k;asc=false;}render();}
+  function render(){
+    let rows=DATA.lines||[];
+    rows.sort((a,b)=>{let x=a[curSort],y=b[curSort];
+      if(typeof x==='number')return asc?x-y:y-x;
+      return asc?String(x).localeCompare(String(y)):String(y).localeCompare(String(x));});
+    document.querySelector('#tbl tbody').innerHTML=rows.map(r=>
+      '<tr><td>'+esc(r.name||'(未命名)')+'</td>'+
+      '<td><span class="tag t-'+(r.tier||'x')+'">'+(r.tier==='trusted'?'可信':'发现')+'</span></td>'+
+      '<td>'+(r.sites||0)+'</td><td>'+(r.ok_days||0)+'</td>'+
+      '<td><code>'+esc((r.url||'').slice(0,80))+'</code></td></tr>').join('');
+  }
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  load();
+  </script>
+</body>
+</html>

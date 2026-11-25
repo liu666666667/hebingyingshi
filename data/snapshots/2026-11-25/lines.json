@@ -1,0 +1,694 @@
+[
+  {
+    "name": "更新专用接口",
+    "urls": [
+      "https://0.12yue.de5.net/tvbox/更新专用接口.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "菠菜pro",
+    "urls": [
+      "https://0.12yue.de5.net/5/x4pro.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "肥猫",
+    "urls": [
+      "http://肥猫.net/tv",
+      "http://肥猫.com/",
+      "https://6296.kstore.vip/facat.json",
+      "http://肥猫.net/"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "小鱼干",
+    "urls": [
+      "http://xhztv.top/dc/小鱼干/api.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "小盒子单仓",
+    "urls": [
+      "http://xhztv.top/xhz"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "4K小盒子",
+    "urls": [
+      "http://xhztv.top/4k.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "老刘备",
+    "urls": [
+      "https://raw.liucn.cc/box/m.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "小马",
+    "urls": [
+      "https://szyyds.cn/tv/x.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "香雅情",
+    "urls": [
+      "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "摸鱼",
+    "urls": [
+      "http://我不是.摸鱼儿.com"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "拾光多仓",
+    "urls": [
+      "http://xmbjm.fh4u.org/dc.txt"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "饭太硬",
+    "urls": [
+      "http://www.饭太硬.net/tv",
+      "http://www.饭太硬.art/tv",
+      "http://fty.xxooo.cf/tv",
+      "http://fty.888484.xyz/tv",
+      "http://fty.333232.xyz/tv",
+      "http://www.饭太硬.cc/tv",
+      "http://www.饭太硬.xyz/tv",
+      "https://www.饭太硬.cc"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "嗷呜",
+    "urls": [
+      "http://www.英格里希嗷呜.top/tv",
+      "https://9763.kstore.vip/aowu.json",
+      "http://itv666.cc/aowu/config.webp"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "潇洒",
+    "urls": [
+      "https://9877.kstore.space/single.json",
+      "https://9877.kstore.space/AnotherD/api.json",
+      "https://9877.kstore.space/one.json",
+      "https://9877.kstore.space/ONE/one.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "王二小",
+    "urls": [
+      "https://9280.kstore.vip/aiwex.json",
+      "https://9280.kstore.space/aiwex.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "南风",
+    "urls": [
+      "https://ghproxy.monkeyray.net/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json"
+    ],
+    "tier": "trusted",
+    "origin": "apibackup"
+  },
+  {
+    "name": "X4更新专用接口",
+    "urls": [
+      "https://0.12yue.de5.net/0/666"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "X4菠菜园",
+    "urls": [
+      "https://0.12yue.de5.net/5/x4.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "X4少儿频道",
+    "urls": [
+      "https://0.12yue.de5.net/5/tv少儿.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "王二小",
+    "urls": [
+      "https://d.kstore.dev/download/9280/wex.json",
+      "https://9280.kstore.vip/newwex.json",
+      "http://new.王二小放牛娃.top",
+      "https://9280.kstore.vip/aiwex.json",
+      "https://9280.kstore.space/aiwex.json",
+      "http://tvbox.王二小放牛娃.top",
+      "https://www.王二小放牛娃.top"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "讴歌",
+    "urls": [
+      "http://tv.nxog.top/m/",
+      "https://欧歌.v.nxog.top/m/"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "小盒子多仓",
+    "urls": [
+      "http://xhztv.top/dc"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "挺好分享多仓",
+    "urls": [
+      "http://ztha.top/TVBox/GYCK.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "网络接口",
+    "urls": [
+      "https://8815.kstore.vip/tvbox/wmz"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "虎斑",
+    "urls": [
+      "http://hb.小虎斑.site:25252/仅供测试"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "东篱",
+    "urls": [
+      "https://16151.kstore.space"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "天微多仓",
+    "urls": [
+      "https://tvkj.top/DC.txt"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "无邪",
+    "urls": [
+      "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/yx.txt"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "分享者",
+    "urls": [
+      "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "高天流云",
+    "urls": [
+      "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "俊佬",
+    "urls": [
+      "http://home.jundie.top:81/top98.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "fastly-jsdelivr",
+    "urls": [
+      "https://fastly.jsdelivr.net/gh/liu673cn/box@main/m.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "pastebin",
+    "urls": [
+      "https://pastebin.com/raw/gtbKvnE1"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "GitLab 多仓（推荐）",
+    "urls": [
+      "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "无邪多仓（推荐）",
+    "urls": [
+      "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/jh.txt"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "艾丝沐",
+    "urls": [
+      "http://tv.aisimu.cn/tv/all.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "应用多多",
+    "urls": [
+      "https://jihulab.com/duomv/apps/-/raw/main/fast.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "凯弟多仓",
+    "urls": [
+      "https://jihulab.com/jyqhkd1/jk/-/raw/main/8.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "z.qiqiv.cn",
+    "urls": [
+      "http://z.qiqiv.cn/123"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "dxawi",
+    "urls": [
+      "https://dxawi.github.io/0/0.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "摸鱼儿",
+    "urls": [
+      "https://www.y456y.com",
+      "http://www.y456y.com"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "创享影视",
+    "urls": [
+      "https://ys.cxkjg.cn/api/provide/tvbox"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "影仓",
+    "urls": [
+      "https://124.71.19.220/"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "伦理接口",
+    "urls": [
+      "http://47.96.82.41:5188/rose/18/xgg.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "无名",
+    "urls": [
+      "https://6800.kstore.vip/fish.json"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "小盒子",
+    "urls": [
+      "https://www.xhztv.pro/"
+    ],
+    "tier": "trusted",
+    "origin": "yscconfig"
+  },
+  {
+    "name": "肥猫",
+    "urls": [
+      "http://肥猫.net/"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
+    "name": "王二小",
+    "urls": [
+      "http://new.王二小放牛娃.top"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
+    "name": "影仓",
+    "urls": [
+      "http://124.71.19.220/c/1"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
+    "name": "嗷呜",
+    "urls": [
+      "http://itv666.cc/aowu/config.webp"
+    ],
+    "tier": "trusted",
+    "origin": "zhuiju"
+  },
+  {
+    "name": "",
+    "urls": [
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/fantaiying/tv.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu1/m.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu2/jx.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu3/xiaoma.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu4/影视/api.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu4/yingshitiantian.json",
+      "https://gitee.com/sd-live/zb/raw/master/jx.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/qitaxianlu/js.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/1/1.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/3/3.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/4/4.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/6/6.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/7/7.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/9/9.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/10/10.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/11/11.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/12/12.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/13/13.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/16/16.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/19/19.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/21/21.json"
+    ],
+    "multi": true,
+    "tier": "trusted",
+    "origin": "yingshicang"
+  },
+  {
+    "name": "",
+    "urls": [
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/fantaiying/tv.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu1/m.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu2/jx_putong.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu3/xiaoma_putong.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu4/影视/api.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu4/yingshitiantian.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/1/1.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/3/3.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/4/4.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/6/6.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/7/7.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/9/9.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/10/10.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/11/11.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/12/12.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/13/13.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/16/16.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/19/19.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/21/21.json"
+    ],
+    "multi": true,
+    "tier": "trusted",
+    "origin": "yingshicang"
+  },
+  {
+    "name": "",
+    "urls": [
+      "https://gh-proxy.com/https://github.com/liu666666667/tvbox-api-backup/blob/main/tvbox/海量采集聚合接口.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/tvbox-ysc-config/refs/heads/main/output/单仓聚合.json",
+      "https://gh-proxy.com/https://github.com/liu666666667/tvbox-api-backup/blob/main/tvbox/海量py聚合接口.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/fantaiying/tv.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu1/m.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu2/jx.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu3/xiaoma.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu4/影视/api.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu4/yingshitiantian.json",
+      "https://raw.giteeusercontent.com/zhouzuozhi/tv/raw/master/ZJY.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/qitaxianlu/js.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/1/1.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/3/3.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/4/4.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/6/6.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/7/7.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/9/9.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/10/10.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/11/11.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/12/12.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/13/13.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/16/16.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/19/19.json",
+      "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianluheji/21/21.json"
+    ],
+    "multi": true,
+    "tier": "trusted",
+    "origin": "yingshicang"
+  },
+  {
+    "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.jso",
+    "urls": [
+      "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.j",
+    "urls": [
+      "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+    "urls": [
+      "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "qist.wyfc.qzz.io/jsm.json",
+    "urls": [
+      "https://qist.wyfc.qzz.io/jsm.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-Py站.j",
+    "urls": [
+      "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-Py站.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json",
+    "urls": [
+      "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "clun.top/fun.json",
+    "urls": [
+      "https://clun.top/fun.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "jihulab.com/jyqhkd1/kai/-/raw/main/机缘巧盒凯弟.json",
+    "urls": [
+      "https://jihulab.com/jyqhkd1/kai/-/raw/main/机缘巧盒凯弟.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.j",
+    "urls": [
+      "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "play.iptv365.org/香雅情/api.json",
+    "urls": [
+      "https://play.iptv365.org/香雅情/api.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/dxyc0922/Tvbox4.x_api/refs/heads/main/",
+    "urls": [
+      "https://raw.githubusercontent.com/dxyc0922/Tvbox4.x_api/refs/heads/main/接口.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/qist/tvbox/master/fty.json",
+    "urls": [
+      "https://raw.githubusercontent.com/qist/tvbox/master/fty.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json",
+    "urls": [
+      "https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "ztha.top/TVBox/thdjk.json",
+    "urls": [
+      "https://ztha.top/TVBox/thdjk.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "11405.kstore.space/xiaye/qk4k.json",
+    "urls": [
+      "https://11405.kstore.space/xiaye/qk4k.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/js",
+    "urls": [
+      "https://raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/json/config.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "jihulab.com/jyqhkd/kd/-/raw/main/kai.json",
+    "urls": [
+      "https://jihulab.com/jyqhkd/kd/-/raw/main/kai.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "www.yingm.cc/dm/dm.json",
+    "urls": [
+      "https://www.yingm.cc/dm/dm.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "0.wudaozhe.net/5/tv少儿.json",
+    "urls": [
+      "https://0.wudaozhe.net/5/tv少儿.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/noimank/tvbox/main/tvboxmuti.json",
+    "urls": [
+      "https://raw.githubusercontent.com/noimank/tvbox/main/tvboxmuti.json"
+    ],
+    "type": "multi",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  }
+]
