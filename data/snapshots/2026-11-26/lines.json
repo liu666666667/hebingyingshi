@@ -458,6 +458,15 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "raw.githack.com/Jamin-f/tvbox-config/main/tvbox.json",
+    "urls": [
+      "https://raw.githack.com/Jamin-f/tvbox-config/main/tvbox.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.j",
     "urls": [
       "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.json"
@@ -596,6 +605,24 @@
     "name": "gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json",
     "urls": [
       "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json"
+    ],
+    "type": "multi",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/larry-biu/tvbox-config/main/warehouse.",
+    "urls": [
+      "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/warehouse.json"
+    ],
+    "type": "multi",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "larry-biu.github.io/tvbox-config/warehouse-pages.json",
+    "urls": [
+      "https://larry-biu.github.io/tvbox-config/warehouse-pages.json"
     ],
     "type": "multi",
     "tier": "discovered",

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-26 07:26:53",
+ "date": "2026-11-26 07:39:54",
  "channels": {
   "github": {
    "queries": 8,
@@ -13,8 +13,8 @@
   },
   "web": {
    "queries": 9,
-   "pages": 99,
-   "candidates": 0
+   "pages": 56,
+   "candidates": 14
   },
   "gitee": {
    "queries": 0,
@@ -30,13 +30,13 @@
    "lists": 0,
    "candidates": 0
   },
-  "candidates_total": 133,
-  "probed": 121,
-  "added_configs": 10,
-  "added_lives": 2,
+  "candidates_total": 147,
+  "probed": 122,
+  "added_configs": 3,
+  "added_lives": 1,
   "pruned": 0,
-  "auto_configs": 32,
-  "auto_lives": 3,
-  "elapsed_sec": 92.1
+  "auto_configs": 35,
+  "auto_lives": 4,
+  "elapsed_sec": 98.9
  }
 }

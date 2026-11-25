@@ -9,7 +9,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 07:26:52",
+   "last_ok": "2026-11-26 07:39:16",
    "fail_streak": 0,
    "score": 1619
   },
@@ -22,9 +22,22 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 07:26:52",
+   "last_ok": "2026-11-26 07:39:16",
    "fail_streak": 0,
    "score": 1303
+  },
+  {
+   "id": "auto_rawgithubuserc_f83ec4",
+   "name": "raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.",
+   "type": "live",
+   "urls": [
+    "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u"
+   ],
+   "channel": "github",
+   "first_seen": "2026-11-26 07:39:54",
+   "last_ok": "2026-11-26 07:39:54",
+   "fail_streak": 0,
+   "score": 473
   },
   {
    "id": "auto_tvboxus_effee5",
@@ -35,11 +48,11 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 07:26:11",
+   "last_ok": "2026-11-26 07:39:16",
    "fail_streak": 0,
    "score": 24
   }
  ],
- "updated_at": "2026-11-26 07:26:52",
+ "updated_at": "2026-11-26 07:39:54",
  "note": "自动全网搜索发现并维护（scripts/discover.py）：新源自动纳入、失效源自动淘汰，无需人工维护。"
 }
