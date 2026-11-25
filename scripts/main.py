@@ -293,13 +293,12 @@ def main():
         ],
         "changelog": P.load_json(os.path.join(OUTPUT, "changelog_data.json"), {}),
     }
+    # ---- 订阅地址写入必须在保存 status 之前，否则落盘的 status.json 无订阅字段 ----
+    detect_subscribe_links(status, repo)
     P.save_json(os.path.join(OUTPUT, "status.json"), status)
     state["seen"]["site_count"] = len(all_sites)
     log("状态: 站点%d 稳定%d 拦截%d 隔离%d 失效%d 骤降%.1f%%" %
         (len(all_sites), len(stable_sites), blocked_count, len(isolated_sites), len(unavail_list), drop_pct))
-
-    # ---- 8. 订阅地址可用性自动探测 ----
-    detect_subscribe_links(status, repo)
 
     # 复制 index.html（若存在）
     idx_src = os.path.join(ROOT, "index.html")
