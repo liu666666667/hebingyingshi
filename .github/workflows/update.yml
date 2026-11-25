@@ -16,7 +16,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
@@ -30,32 +30,17 @@ jobs:
 
       - name: 运行汇总流水线
         env:
-          DISC_TIME_BUDGET: '1200'
-        run: |
-          python scripts/main.py --repo "${{ github.repository }}"
+          DISC_TIME_BUDGET: '1800'
+        run: python scripts/main.py --repo "${{ github.repository }}"
 
-      - name: 提交结果到 gh-pages 分支
+      - name: 提交产出与状态回 main
         run: |
           git config --global user.name "hb-bot"
           git config --global user.email "hb-bot@users.noreply.github.com"
-          # 检出/创建 gh-pages 分支
-          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
-            git fetch origin gh-pages
-            git checkout -B gh-pages origin/gh-pages
-          else
-            git checkout --orphan gh-pages
-            git rm -rf . >/dev/null 2>&1 || true
-          fi
-          # 同步产出到分支根目录
-          cp index.html ./
-          cp -r output/ ./
-          cp -r data/unavailable/ ./unavailable/ 2>/dev/null || true
-          # 保留流水线代码快照（便于追溯）
-          mkdir -p _src && cp -r scripts config _src/ 2>/dev/null || true
           git add -A
           if git diff --cached --quiet; then
-            echo "无变更，跳过提交"
+            echo "无变更"
           else
-            git commit -m "每日更新 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git push -f origin gh-pages
+            git commit -m "每日汇总 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin main
           fi

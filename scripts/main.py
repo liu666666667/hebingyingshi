@@ -373,7 +373,8 @@ def collect_live_m3u(live_lines, probe_on, settings):
 
 
 def detect_subscribe_links(status, repo):
-    """自动探测 Pages / raw 两个订阅地址，能连通的才对外给。"""
+    """生成订阅地址候选并探测可达性。首次部署文件尚未生效时探测会失败，
+    但地址本身有效（提交后即生效），所以全部给出，仅用 reachable 标记状态。"""
     from common import http_get
     base = "https://%s.github.io/%s" % (repo.split("/")[0], repo.split("/")[1])
     candidates = {
@@ -383,13 +384,18 @@ def detect_subscribe_links(status, repo):
         "live_pages": base + "/output/live.m3u",
     }
     links = {}
+    reach = {}
     for key, url in candidates.items():
+        ok = False
         try:
-            http_get(url, timeout=6, max_bytes=4096)
-            links[key] = url
+            http_get(url, timeout=5, max_bytes=2048)
+            ok = True
         except Exception:
             pass
+        links[key] = url
+        reach[key] = ok
     status["subscribe_links"] = links
+    status["subscribe_reachable"] = reach
 
 
 def write_changelog(date, added, removed, revived, isolated, disabled, total):

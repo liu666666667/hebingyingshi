@@ -73,12 +73,14 @@
     if(s.drop_alert){document.getElementById('alertBox').innerHTML=
       '<div class="alert">⚠ 站点数较昨日下降 '+s.drop_pct+'%，上游可能异常，请检查。</div>';}
     // 订阅地址
-    const L=DATA.subscribe_links||{};
-    const names={stable_pages:'稳定版 · Pages',final_pages:'全量版 · Pages',stable_raw:'稳定版 · Raw',live_pages:'直播 · Pages'};
+    const L=DATA.subscribe_links||{}, R=DATA.subscribe_reachable||{};
+    const names={stable_pages:'稳定版 · Pages',final_pages:'全量版 · Pages',stable_raw:'稳定版 · Raw（备用）',live_pages:'直播 · Pages',live_raw:'直播 · Raw（备用）'};
     const keys=Object.keys(L);
     document.getElementById('links').innerHTML=keys.length?keys.map(k=>
-      '<a class="btn ok" href="'+L[k]+'" target="_blank" rel="noreferrer">'+'<span class="dot"></span>'+(names[k]||k)+'</a>').join(''):
-      '<span class="muted">本次未探测到可访问地址（可能首次部署尚未生效）</span>';
+      '<a class="btn '+((R[k])?'ok':'dead')+'" href="'+L[k]+'" target="_blank" rel="noreferrer">'+
+      '<span class="dot" style="'+(R[k]?'':'background:#ef4444')+'"></span>'+(names[k]||k)+
+      (R[k]?'':' <span class="muted">(待生效)</span>')+'</a>').join(''):
+      '<span class="muted">暂无地址</span>';
     // 变更
     const c=DATA.changelog||{};
     document.getElementById('cl').innerHTML=[
