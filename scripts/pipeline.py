@@ -194,28 +194,78 @@ PARSERS = {
 
 
 def fetch_manifest(spec):
-    """抓一个清单源的全部入口文件，解析后合并成行列表。带镜像+重试。"""
+    """抓一个清单源的入口文件，解析成行列表。
+    策略（数据固化优先，上游删了也能永久用）：
+      1) 先读本地 manifests/ 固化副本 —— 保证永远有数据；
+      2) 尝试拉上游最新，成功则解析之并写回固化副本（吸收上游维护成果）；
+      3) 上游连不上/被删，直接用固化副本，不报错。
+    多文件源（raws + manifest 列表）逐个对应处理。
+    """
     typ = spec.get("type")
-    raws = spec.get("raws") or ([spec["raw"]] if spec.get("raw") else [])
-    # 上游原作者优先，失败时才退回用户自己的 fork（避免同内容重复累加）
-    fb = spec.get("fallback_raw")
     parser = PARSERS.get(typ, extract_from_auto)
+    # local_path：直接读本仓库内文件（discover.py 产物），完全不联网
+    lp = spec.get("local_path")
+    if lp:
+        p = os.path.join(CONFIG, "..", lp)
+        try:
+            with open(p, encoding="utf-8") as f:
+                text = f.read()
+            return parser(text), []
+        except Exception as e:
+            return [], ["local_path %s: %s" % (lp, str(e)[:50])]
+    mf = spec.get("manifest")          # 本地固化文件名（单文件源）
+    mfs = spec.get("manifests")        # 本地固化文件名列表（多文件源）
+    raws = spec.get("raws") or ([spec["raw"]] if spec.get("raw") else [])
+    fb = spec.get("fallback_raw")
     lines = []
     errors = []
-    for raw in raws:
+
+    local_files = mfs or ([mf] if mf else [])
+
+    def read_local(path):
+        p = os.path.join(CONFIG, "..", "manifests", os.path.basename(path))
+        try:
+            with open(p, encoding="utf-8") as f:
+                return f.read()
+        except Exception:
+            return None
+
+    def write_local(path, text):
+        p = os.path.join(CONFIG, "..", "manifests", os.path.basename(path))
+        try:
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(text)
+        except Exception:
+            pass
+
+    # 缓存本次抓到的上游文本，成功即写回固化副本
+    fresh = {}
+    urls_to_try = list(raws) + ([fb] if fb else [])
+    for raw in urls_to_try:
         try:
             _, _, text = fetch_text_with_fallback([raw], retries=1, app_ua=True)
-            got = parser(text)
-            lines.extend(got)
+            if text and len(text) > 20:
+                fresh[raw] = text
         except Exception as e:
             errors.append("%s: %s" % (raw.split("/")[-1], str(e)[:60]))
-    # 主地址全部失败时，退回 fork 兜底
-    if not lines and fb:
-        try:
-            _, _, text = fetch_text_with_fallback([fb], retries=1, app_ua=True)
-            lines.extend(parser(text))
-        except Exception as e:
-            errors.append("fallback: %s" % str(e)[:60])
+
+    # 逐入口：优先用上游新文本，否则用本地固化副本
+    for i, raw in enumerate(raws):
+        local = local_files[i] if i < len(local_files) else (mf or raw.split("/")[-1])
+        text = fresh.get(raw)
+        if text:
+            write_local(local, text)          # 刷新固化副本
+        else:
+            text = read_local(local)          # 上游断了，用固化副本
+        if not text:
+            # 最后兜底：fallback raw 的文本
+            text = fresh.get(fb) if fb else None
+        if text:
+            try:
+                lines.extend(parser(text))
+            except Exception as e:
+                errors.append("parse %s: %s" % (os.path.basename(local), str(e)[:50]))
     return lines, errors
 
 

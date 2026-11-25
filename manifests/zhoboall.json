@@ -1,0 +1,48 @@
+{
+"urls":[
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/zhiboyuan/anhdx.txt",
+    "name": "线路1"
+},
+      {
+"url": "https://gh-proxy.com/https://github.com/liu666666667/tvbox-api-backup/blob/main/tvbox/海量直播聚合接口.json",
+"name": "tvbox-api-backup1直播聚合"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/zhiboyuan/gs.txt",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/zhiboyuan/hblt.txt",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/zhiboyuan/hlgc.txt",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/zhiboyuan/lnc.txt",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/zhiboyuan/lndx.txt",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/zhiboyuan/lnyd.txt",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/qitaxianlu/myHN",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/qitaxianlu/myDS",
+    "name": "线路2"
+},
+{
+    "url": "https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/qitaxianlu/mySD",
+    "name": "线路2"
+}
+]
+}

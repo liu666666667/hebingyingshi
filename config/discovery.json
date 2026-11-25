@@ -1,5 +1,9 @@
 {
-  "description": "源级禁用规则（照搬 yingshi）：命中则整源拒收/存量立即淘汰。三类：登录付费词、图片伪装 spider、GO/本地代理关键词。",
+  "description": "发现参数 + 源级禁用规则。前半段供 discover.py 全网发现用，后半段过滤词表供 pipeline.py 过滤用。",
+  "enabled": true,
+  "max_new_per_run": 10,
+  "max_new_lives": 5,
+  "extra_manifests": [],
   "login_block_keywords": [
     "卡密", "授权码", "邀请码", "激活码", "请登录", "需登录", "登录后",
     "付费开通", "扫码登录", "扫码获取", "进群获取", "加群获取", "加群交流",

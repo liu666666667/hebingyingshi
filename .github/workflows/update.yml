@@ -28,10 +28,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 运行汇总流水线
+      - name: 运行汇总流水线（先全网发现，再汇总；发现内化自 yingshi）
         env:
-          DISC_TIME_BUDGET: '1800'
-        run: python scripts/main.py --repo "${{ github.repository }}"
+          DISC_TIME_BUDGET: '1500'
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        run: python scripts/main.py --run-discover --repo "${{ github.repository }}"
 
       - name: 提交产出与状态回 main
         run: |

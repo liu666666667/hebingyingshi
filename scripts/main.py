@@ -27,8 +27,19 @@ def log(*a):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip-probe", action="store_true", help="跳过在线探活（调试/离线）")
+    ap.add_argument("--run-discover", action="store_true", help="先跑全网发现，产出本地 auto_sources/auto_lives")
     ap.add_argument("--repo", default="liu666666667/hebingyingshi")
     args = ap.parse_args()
+
+    # ---- 0. 全网发现（内化自 yingshi），产出本地补位源 ----
+    if args.run_discover:
+        log("启动全网发现 discover（内化，不再依赖 yingshi）...")
+        try:
+            import discover as D
+            rc = D.main()
+            log("discover 完成，返回码:", rc)
+        except Exception as e:
+            log("discover 异常（不影响主流程，沿用已有 auto 清单）:", str(e)[:120])
 
     settings = P.load_json(os.path.join(CONFIG, "settings.json"), {})
     sources = P.load_json(os.path.join(CONFIG, "sources.json"), {})
