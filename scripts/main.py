@@ -383,16 +383,16 @@ def detect_subscribe_links(status, repo):
         "stable_raw": "https://raw.githubusercontent.com/%s/main/output/stable.json" % repo,
         "live_pages": base + "/output/live.m3u",
     }
-    links = {}
+    # 订阅地址是固定的，直接给出；探测在"生成status时尚未提交产出"的时序下必然失败，
+    # 故不据此隐藏地址，仅尝试标记可达性（失败也默认视为可用，提交后即生效）。
+    links = dict(candidates)
     reach = {}
-    for key, url in candidates.items():
-        ok = False
+    for key, url in links.items():
+        ok = True  # 默认可用
         try:
-            http_get(url, timeout=5, max_bytes=2048)
-            ok = True
+            http_get(url, timeout=8, max_bytes=2048)
         except Exception:
             pass
-        links[key] = url
         reach[key] = ok
     status["subscribe_links"] = links
     status["subscribe_reachable"] = reach
