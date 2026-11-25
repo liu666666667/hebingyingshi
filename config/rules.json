@@ -1,0 +1,41 @@
+{
+  "description": "内容治理规则：去广告 + 博彩 + 垃圾 + 网盘登录。照搬 yingshi rules.json 并补充常规广告词与网盘登录词。全部外置，改本文件即可调整。命中站点的处理：drop=直接剔除，isolate=隔离到不可用区留档（不进任何公开产出）。",
+  "site_action": "drop",
+  "site_filters": {
+    "mode": "block",
+    "match_fields": ["name", "api", "ext"],
+    "block_keywords": [
+      "博彩", "赌博", "彩票", "赌场", "六合彩", "百家乐", "开元棋牌", "澳门赌", "威尼斯人",
+      "太阳城", "赌球", "体育投注", "皇冠体育", "博鱼", "环球体育", "乐鱼体育",
+      "爱游戏体育", "开云体育", "六合", "时时彩", "分分彩", "北京赛车", "幸运飞艇",
+      "ag厅", "新葡京", "葡京", "开奖网", "下注", "菠菜",
+      "卡密", "激活码", "邀请码", "授权码", "付费开通", "扫码登录", "进群获取", "加群获取", "加群交流",
+      "网盘登录", "登录网盘", "网盘授权", "夸克登录", "百度网盘登录", "阿里云盘登录", "扫码登录网盘", "网盘扫码",
+      "广告", "推广", "赞助", "弹窗广告", "导航页", "下载APP", "下载app", "加群", "客服微信"
+    ],
+    "block_domains": [
+      "d1234.cc", "77ttrry.com", "77ttvvyy.com", "vip1234.top", "bcvcd.cc", "cp955.cc",
+      "wujincp.com", "0088445.com", "ff1515.net", "amvnb.com", "xhztv.top"
+    ],
+    "block_regex": [
+      "(百家乐|澳门威尼斯人|凯旋门|新?葡京|太阳城).{0,6}(官网|平台|开户|娱乐城)",
+      "(体育|足球|电竞).{0,4}(投注|盘口)",
+      "(棋牌|捕鱼|牛牛|金花|开元|十三张).{0,4}(游戏|平台|大厅|真人|赢|送|红包)",
+      "(cp|caipiao|lottery|baccarat)[0-9]{0,3}\\.(com|net|top|cc|vip)$"
+    ],
+    "whitelist_domains": [],
+    "whitelist_name_contains": ["澳门回归", "澳门风云"]
+  },
+  "live_filters": {
+    "mode": "block",
+    "block_group_keywords": ["博彩", "赌博", "彩票", "赌场", "开奖", "推广", "广告", "测试付费", "VIP购买", "扫码", "客服", "福利", "招代理"],
+    "block_channel_keywords": ["广告", "推广", "测试", "付费", "扫码", "购物", "卖药", "客服", "彩票", "棋牌"],
+    "whitelist_channel_keywords": ["CCTV", "卫视", "央视"]
+  },
+  "quality": {
+    "min_source_size_kb": 1,
+    "require_valid_json": true,
+    "dedup_sites": true,
+    "site_name_max_len": 30
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "description": "上游清单入口。trusted 为你信任的四个手工源（主力），discovered 为 yingshi 自动发现（补位）。每项 type 决定解析器：apilinks=名称,URL,URL 格式；multi=多仓 {urls:[...]}；single=单仓 {sites,spider}；ysc=ysc-config 的 sources.json；zhuiju=追剧导航 resources.json；auto=yingshi 的 auto_sources.json。",
+  "trusted": [
+    {
+      "id": "apibackup",
+      "name": "tvbox-api-backup",
+      "type": "apilinks",
+      "branch": "main",
+      "paths": ["apilinks.txt"],
+      "raw": "https://raw.githubusercontent.com/liu666666667/tvbox-api-backup/main/apilinks.txt"
+    },
+    {
+      "id": "yscconfig",
+      "name": "tvbox-ysc-config",
+      "type": "ysc",
+      "branch": "main",
+      "paths": ["config/sources.json"],
+      "raw": "https://raw.githubusercontent.com/liu666666667/tvbox-ysc-config/main/config/sources.json"
+    },
+    {
+      "id": "zhuiju",
+      "name": "awesome-zhuiju-free",
+      "type": "zhuiju",
+      "branch": "main",
+      "paths": ["resources/resources.json"],
+      "raw": "https://raw.githubusercontent.com/liu666666667/awesome-zhuiju-free/main/resources/resources.json"
+    },
+    {
+      "id": "yingshicang",
+      "name": "yingshicang",
+      "type": "multi",
+      "branch": "master",
+      "paths": ["all.json", "pingchang.json", "ghproxyall.json"],
+      "raws": [
+        "https://raw.githubusercontent.com/liu666666667/yingshicang/master/all.json",
+        "https://raw.githubusercontent.com/liu666666667/yingshicang/master/pingchang.json",
+        "https://raw.githubusercontent.com/liu666666667/yingshicang/master/ghproxyall.json"
+      ]
+    }
+  ],
+  "discovered": [
+    {
+      "id": "yingshi_auto",
+      "name": "yingshi-discovery",
+      "type": "auto",
+      "branch": "main",
+      "paths": ["config/auto_sources.json"],
+      "raw": "https://raw.githubusercontent.com/liu666666667/yingshi/main/config/auto_sources.json"
+    }
+  ],
+  "live": [
+    {
+      "id": "yingshicang_live",
+      "name": "yingshicang-直播",
+      "type": "multi",
+      "branch": "master",
+      "paths": ["zhoboall.json"],
+      "raw": "https://raw.githubusercontent.com/liu666666667/yingshicang/master/zhoboall.json"
+    },
+    {
+      "id": "yingshi_live",
+      "name": "yingshi-直播",
+      "type": "auto_live",
+      "branch": "main",
+      "paths": ["config/auto_lives.json"],
+      "raw": "https://raw.githubusercontent.com/liu666666667/yingshi/main/config/auto_lives.json"
+    }
+  ]
+}

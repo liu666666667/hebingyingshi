@@ -1,0 +1,16 @@
+{
+  "description": "源级禁用规则（照搬 yingshi）：命中则整源拒收/存量立即淘汰。三类：登录付费词、图片伪装 spider、GO/本地代理关键词。",
+  "login_block_keywords": [
+    "卡密", "授权码", "邀请码", "激活码", "请登录", "需登录", "登录后",
+    "付费开通", "扫码登录", "扫码获取", "进群获取", "加群获取", "加群交流",
+    "网盘登录", "登录网盘", "网盘授权", "夸克登录", "百度网盘登录", "阿里云盘登录", "扫码登录网盘"
+  ],
+  "bad_spider_exts": [".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp"],
+  "go_proxy_keywords": ["本地代理", "下载go", "下载 go", "go组件", "go 组件", "初始化代理"],
+  "default_spider": "https://raw.liucn.cc/box/fty.jar",
+  "adult_keywords": [
+    "nsfw", "adult", "porn", "xxx", "色情", "成人", "18禁", "18+", "av在线",
+    "里番", "伦理", "午夜场", "十八禁", "🔞", "麻豆", "天美传媒", "精东", "91制片", "fc2", "无码", "jav", "裸聊"
+  ],
+  "adult_allow_keywords": ["webdav", "dav", "豆瓣", "douban", "澳门回归", "澳门风云"]
+}

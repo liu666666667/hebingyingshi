@@ -1,0 +1,21 @@
+{
+  "description": "hebingyingshi 全局运行参数。改这里即可调节合并/过滤/淘汰策略。",
+  "stable_min_days": 3,
+  "coldstart_days": 3,
+  "fail_limit": 7,
+  "revive_days": 7,
+  "snapshot_fallback_max_days": 3,
+  "drop_alert_pct": 30,
+  "max_sites_single": 1500,
+  "probe_timeout": 8,
+  "probe_workers": 12,
+  "probe_enabled": true,
+  "denied_adult_to_private": true,
+  "repos": {
+    "tvbox-api-backup": "https://github.com/liu666666667/tvbox-api-backup",
+    "tvbox-ysc-config": "https://github.com/liu666666667/tvbox-ysc-config",
+    "awesome-zhuiju-free": "https://github.com/liu666666667/awesome-zhuiju-free",
+    "yingshicang": "https://github.com/liu666666667/yingshicang",
+    "yingshi": "https://github.com/liu666666667/yingshi"
+  }
+}
