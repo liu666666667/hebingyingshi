@@ -23,7 +23,9 @@
       "(百家乐|澳门威尼斯人|凯旋门|新?葡京|太阳城).{0,6}(官网|平台|开户|娱乐城)",
       "(体育|足球|电竞).{0,4}(投注|盘口)",
       "(棋牌|捕鱼|牛牛|金花|开元|十三张).{0,4}(游戏|平台|大厅|真人|赢|送|红包)",
-      "(cp|caipiao|lottery|baccarat)[0-9]{0,3}\\.(com|net|top|cc|vip)$"
+      "(cp|caipiao|lottery|baccarat)[0-9]{0,3}\\.(com|net|top|cc|vip)$",
+      "^csp_.*$",
+      "(弹窗|弹屏|popup|pop-up|强制跳转|诱导下载|下载组件|安装组件|安装插件)"
     ],
     "whitelist_domains": [],
     "whitelist_name_contains": ["澳门回归", "澳门风云"]
