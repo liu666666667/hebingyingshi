@@ -197,6 +197,8 @@ def fetch_manifest(spec):
     """抓一个清单源的全部入口文件，解析后合并成行列表。带镜像+重试。"""
     typ = spec.get("type")
     raws = spec.get("raws") or ([spec["raw"]] if spec.get("raw") else [])
+    # 上游原作者优先，失败时才退回用户自己的 fork（避免同内容重复累加）
+    fb = spec.get("fallback_raw")
     parser = PARSERS.get(typ, extract_from_auto)
     lines = []
     errors = []
@@ -207,6 +209,13 @@ def fetch_manifest(spec):
             lines.extend(got)
         except Exception as e:
             errors.append("%s: %s" % (raw.split("/")[-1], str(e)[:60]))
+    # 主地址全部失败时，退回 fork 兜底
+    if not lines and fb:
+        try:
+            _, _, text = fetch_text_with_fallback([fb], retries=1, app_ua=True)
+            lines.extend(parser(text))
+        except Exception as e:
+            errors.append("fallback: %s" % str(e)[:60])
     return lines, errors
 
 

@@ -7,7 +7,8 @@
       "type": "apilinks",
       "branch": "main",
       "paths": ["apilinks.txt"],
-      "raw": "https://raw.githubusercontent.com/liu666666667/tvbox-api-backup/main/apilinks.txt"
+      "raw": "https://raw.githubusercontent.com/lubin776/tvbox-api-backup/main/apilinks.txt",
+      "fallback_raw": "https://raw.githubusercontent.com/liu666666667/tvbox-api-backup/main/apilinks.txt"
     },
     {
       "id": "yscconfig",
@@ -15,7 +16,8 @@
       "type": "ysc",
       "branch": "main",
       "paths": ["config/sources.json"],
-      "raw": "https://raw.githubusercontent.com/liu666666667/tvbox-ysc-config/main/config/sources.json"
+      "raw": "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/config/sources.json",
+      "fallback_raw": "https://raw.githubusercontent.com/liu666666667/tvbox-ysc-config/main/config/sources.json"
     },
     {
       "id": "zhuiju",
@@ -23,7 +25,8 @@
       "type": "zhuiju",
       "branch": "main",
       "paths": ["resources/resources.json"],
-      "raw": "https://raw.githubusercontent.com/liu666666667/awesome-zhuiju-free/main/resources/resources.json"
+      "raw": "https://raw.githubusercontent.com/laoma528/awesome-zhuiju-free/main/resources/resources.json",
+      "fallback_raw": "https://raw.githubusercontent.com/liu666666667/awesome-zhuiju-free/main/resources/resources.json"
     },
     {
       "id": "yingshicang",

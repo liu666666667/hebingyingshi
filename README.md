@@ -54,5 +54,3 @@
 ## 手动触发
 
 在 GitHub 仓库页面进入 Actions → 「每日影视汇总更新」→ Run workflow。
-
-<!-- pages-rebuild-flag -->
