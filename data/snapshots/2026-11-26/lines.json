@@ -323,6 +323,15 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+    "urls": [
+      "https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.j",
     "urls": [
       "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.json"
@@ -350,9 +359,27 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
+    "urls": [
+      "https://raw.githubusercontent.com/yw88075/tvbox/main/yw.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-Py站.j",
     "urls": [
       "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-Py站.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "150.158.52.248/tgyg/bbm.json",
+    "urls": [
+      "http://150.158.52.248/tgyg/bbm.json"
     ],
     "type": "single",
     "tier": "discovered",
@@ -368,6 +395,24 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "我不是.摸鱼儿.top",
+    "urls": [
+      "http://我不是.摸鱼儿.top"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "clun.top/box.json",
+    "urls": [
+      "https://clun.top/box.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "clun.top/fun.json",
     "urls": [
       "https://clun.top/fun.json"
@@ -377,9 +422,45 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "宝盒接口.top",
+    "urls": [
+      "http://宝盒接口.top"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "gitlab.com/noimank/tvbox/-/raw/main/tvbox1.json",
+    "urls": [
+      "https://gitlab.com/noimank/tvbox/-/raw/main/tvbox1.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "jihulab.com/jyqhkd1/kai/-/raw/main/机缘巧盒凯弟.json",
     "urls": [
       "https://jihulab.com/jyqhkd1/kai/-/raw/main/机缘巧盒凯弟.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/Jamin-f/tvbox-config/main/tvbox.json",
+    "urls": [
+      "https://raw.githubusercontent.com/Jamin-f/tvbox-config/main/tvbox.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githack.com/Jamin-f/tvbox-config/main/tvbox.json",
+    "urls": [
+      "https://raw.githack.com/Jamin-f/tvbox-config/main/tvbox.json"
     ],
     "type": "single",
     "tier": "discovered",
@@ -452,6 +533,15 @@
     "name": "raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/js",
     "urls": [
       "https://raw.githubusercontent.com/Greatwallcorner/CatVodSpider/master/json/config.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
+    "urls": [
+      "https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json"
     ],
     "type": "single",
     "tier": "discovered",

@@ -1,5 +1,17 @@
 [
   {
+    "key": "0.12yue.de5.net/tvbox/更新专用接口.json",
+    "name": "更新专用接口",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
+    "key": "0.12yue.de5.net/5/x4pro.json",
+    "name": "菠菜pro",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
     "key": "9280.kstore.vip/aiwex.json",
     "name": "王二小",
     "reason": "image-spider",
@@ -12,9 +24,33 @@
     "last_ok": null
   },
   {
+    "key": "9877.kstore.space/single.json",
+    "name": "潇洒",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
+    "key": "tv.nxog.top/m",
+    "name": "讴歌",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
+    "key": "ghproxy.monkeyray.net/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
+    "name": "南风",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
     "key": "szyyds.cn/tv/x.json",
     "name": "小马",
     "reason": "image-spider",
+    "last_ok": null
+  },
+  {
+    "key": "www.饭太硬.net/tv",
+    "name": "饭太硬",
+    "reason": "fail_streak",
     "last_ok": null
   },
   {
@@ -30,6 +66,12 @@
     "last_ok": null
   },
   {
+    "key": "www.xhztv.pro",
+    "name": "小盒子",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
     "key": "new.王二小放牛娃.top",
     "name": "王二小",
     "reason": "image-spider",
@@ -39,6 +81,24 @@
     "key": "raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/fantaiying/tv.json",
     "name": "",
     "reason": "image-spider",
+    "last_ok": null
+  },
+  {
+    "key": "itv666.cc/aowu/config.webp",
+    "name": "嗷呜",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
+    "key": "gh-proxy.com/https://github.com/liu666666667/tvbox-api-backup/blob/main/tvbox/海量采集聚合接口.json",
+    "name": "",
+    "reason": "fail_streak",
+    "last_ok": null
+  },
+  {
+    "key": "肥猫.net",
+    "name": "肥猫",
+    "reason": "fail_streak",
     "last_ok": null
   },
   {
