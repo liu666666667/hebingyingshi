@@ -1,0 +1,46 @@
+name: Sync resources.json
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # UTC 02:00，北京时间 10:00
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download upstream files
+        run: |
+          mkdir -p resources reports
+
+          curl -fsSL \
+            "https://raw.githubusercontent.com/laoma528/awesome-zhuiju-free/main/resources/resources.json" \
+            -o resources/resources.json
+
+          curl -fsSL \
+            "https://raw.githubusercontent.com/laoma528/awesome-zhuiju-free/main/reports/verifications.json" \
+            -o reports/verifications.json
+
+          # 校验下载内容确实是合法 JSON
+          python3 -c "import json; json.load(open('resources/resources.json'))" \
+            || { echo "resources.json 不是合法 JSON，中止"; exit 1; }
+          python3 -c "import json; json.load(open('reports/verifications.json'))" \
+            || { echo "verifications.json 不是合法 JSON，中止"; exit 1; }
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add resources/resources.json reports/verifications.json
+          if git diff --cached --quiet; then
+            echo "没有变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "sync resources.json and verifications.json from upstream"
+          git push

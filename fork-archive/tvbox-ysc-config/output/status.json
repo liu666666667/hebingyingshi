@@ -1,0 +1,299 @@
+{
+  "updated_at": "2026-11-16 03:36:03",
+  "repo": "liu666666667/tvbox-ysc-config",
+  "sources": [
+    {
+      "id": "x4_update",
+      "name": "X4更新专用接口",
+      "ok": true,
+      "used_url": "(缓存)",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "cached": true
+    },
+    {
+      "id": "x4_pro",
+      "name": "X4菠菜pro",
+      "ok": true,
+      "used_url": "(缓存)",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "cached": true
+    },
+    {
+      "id": "x4_yuan",
+      "name": "X4菠菜园",
+      "ok": true,
+      "used_url": "(缓存)",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "cached": true
+    },
+    {
+      "id": "x4_kids",
+      "name": "X4少儿频道",
+      "ok": true,
+      "used_url": "(缓存)",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "cached": true
+    },
+    {
+      "id": "feimao",
+      "name": "肥猫",
+      "ok": true,
+      "used_url": "(缓存)",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "cached": true
+    },
+    {
+      "id": "fantaiying",
+      "name": "饭太硬",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "wangerxiao",
+      "name": "王二小",
+      "ok": true,
+      "used_url": "https://d.kstore.dev/download/9280/wex.json",
+      "error": null
+    },
+    {
+      "id": "laoliubei",
+      "name": "老刘备",
+      "ok": true,
+      "used_url": "https://raw.liucn.cc/box/m.json",
+      "error": null
+    },
+    {
+      "id": "xiaoma",
+      "name": "小马",
+      "ok": true,
+      "used_url": "https://szyyds.cn/tv/x.json",
+      "error": null
+    },
+    {
+      "id": "ouge",
+      "name": "讴歌",
+      "ok": true,
+      "used_url": "(缓存)",
+      "error": "HTTPSConnectionPool(host='xn--dkw0c.v.nxog.top', port=443): Max retries exceeded with url: /m/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'xn--dkw0c.v.nxog.top'. (_ssl.c:1018)\")))",
+      "cached": true
+    },
+    {
+      "id": "4k_xiaohezi",
+      "name": "4K小盒子",
+      "ok": true,
+      "used_url": "http://xhztv.top/4k.json",
+      "error": null
+    },
+    {
+      "id": "xiaohezi_dancang",
+      "name": "小盒子单仓",
+      "ok": true,
+      "used_url": "http://xhztv.top/xhz",
+      "error": null
+    },
+    {
+      "id": "xiaohezi_duocang",
+      "name": "小盒子多仓",
+      "ok": true,
+      "used_url": "http://xhztv.top/dc",
+      "error": null
+    },
+    {
+      "id": "shiguang",
+      "name": "拾光多仓",
+      "ok": true,
+      "used_url": "http://xmbjm.fh4u.org/dc.txt",
+      "error": null
+    },
+    {
+      "id": "tinghao",
+      "name": "挺好分享多仓",
+      "ok": true,
+      "used_url": "http://ztha.top/TVBox/GYCK.json",
+      "error": null
+    },
+    {
+      "id": "xiaoyugan",
+      "name": "小鱼干",
+      "ok": true,
+      "used_url": "http://xhztv.top/dc/小鱼干/api.json",
+      "error": null
+    },
+    {
+      "id": "wangluo",
+      "name": "网络接口",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "huban",
+      "name": "虎斑",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "dongli",
+      "name": "东篱",
+      "ok": false,
+      "used_url": null,
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 或 urls 字段）"
+    },
+    {
+      "id": "xiangyaqing",
+      "name": "香雅情",
+      "ok": true,
+      "used_url": "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+      "error": null
+    },
+    {
+      "id": "tianwei",
+      "name": "天微多仓",
+      "ok": false,
+      "used_url": null,
+      "error": "404 Client Error: Not Found for url: https://tvkj.top/DC.txt"
+    },
+    {
+      "id": "wuxie",
+      "name": "无邪",
+      "ok": true,
+      "used_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/yx.txt",
+      "error": null
+    },
+    {
+      "id": "fenxiangzhe",
+      "name": "分享者",
+      "ok": true,
+      "used_url": "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+      "error": null
+    },
+    {
+      "id": "gaotianliuyun",
+      "name": "高天流云",
+      "ok": true,
+      "used_url": "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+      "error": null
+    },
+    {
+      "id": "junlao",
+      "name": "俊佬",
+      "ok": true,
+      "used_url": "http://home.jundie.top:81/top98.json",
+      "error": null
+    },
+    {
+      "id": "fastly_jsdelivr",
+      "name": "fastly-jsdelivr",
+      "ok": true,
+      "used_url": "https://fastly.jsdelivr.net/gh/liu673cn/box@main/m.json",
+      "error": null
+    },
+    {
+      "id": "pastebin",
+      "name": "pastebin",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 29 column 1 (char 2947)"
+    },
+    {
+      "id": "aowu",
+      "name": "嗷呜",
+      "ok": true,
+      "used_url": "https://9763.kstore.vip/aowu.json",
+      "error": null
+    },
+    {
+      "id": "gitlab_multi",
+      "name": "GitLab 多仓（推荐）",
+      "ok": true,
+      "used_url": "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json",
+      "error": null
+    },
+    {
+      "id": "wuxie_multi",
+      "name": "无邪多仓（推荐）",
+      "ok": true,
+      "used_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/jh.txt",
+      "error": null
+    },
+    {
+      "id": "aisimu",
+      "name": "艾丝沐",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "yingyongduoduo",
+      "name": "应用多多",
+      "ok": false,
+      "used_url": null,
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 或 urls 字段）"
+    },
+    {
+      "id": "kaidi",
+      "name": "凯弟多仓",
+      "ok": true,
+      "used_url": "https://jihulab.com/jyqhkd1/jk/-/raw/main/8.json",
+      "error": null
+    },
+    {
+      "id": "zqiqiv",
+      "name": "z.qiqiv.cn",
+      "ok": true,
+      "used_url": "http://z.qiqiv.cn/123",
+      "error": null
+    },
+    {
+      "id": "dxawi",
+      "name": "dxawi",
+      "ok": true,
+      "used_url": "https://dxawi.github.io/0/0.json",
+      "error": null
+    },
+    {
+      "id": "zhuiju_2ee238bf",
+      "name": "摸鱼儿",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "zhuiju_0a3780c6",
+      "name": "创享影视",
+      "ok": true,
+      "used_url": "https://ys.cxkjg.cn/api/provide/tvbox",
+      "error": null
+    },
+    {
+      "id": "zhuiju_6ee3abaf",
+      "name": "影仓",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "zhuiju_8236b8ce",
+      "name": "伦理接口",
+      "ok": true,
+      "used_url": "http://47.96.82.41:5188/rose/18/xgg.json",
+      "error": null
+    },
+    {
+      "id": "zhuiju_b77cb2f3",
+      "name": "无名",
+      "ok": true,
+      "used_url": "https://6800.kstore.vip/fish.json",
+      "error": null
+    },
+    {
+      "id": "zhuiju_c924d24a",
+      "name": "小盒子",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ]
+}

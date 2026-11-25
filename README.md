@@ -15,11 +15,15 @@
 
 ## 数据来源
 
-主力（可信源，冲突时优先）：
-- `tvbox-api-backup` · `tvbox-ysc-config` · `awesome-zhuiju-free` · `yingshicang`
+本仓库**自给自足**：所有上游数据都已 merge 固化进来，外部仓库（含原 fork、`yingshi`）全部删除也不影响运行。
 
-补位（自动发现）：
-- `yingshi` 的 daily discovery 结果
+主力（可信源，冲突时优先）——清单固化在 `manifests/`，上游删除仍能永久用：
+- `tvbox-api-backup`（lubin776）· `tvbox-ysc-config`（Lightconer）· `awesome-zhuiju-free`（laoma528）· `yingshicang`
+
+补位（自动发现）——发现逻辑已内化在 `scripts/discover.py`，产物 `config/auto_sources.json`：
+- 全网发现（种子 / 网页搜索 / GitHub / Gitee 四通道），不再依赖 `yingshi`
+
+完整归档：三个 fork 的全部原始文件（脚本 / 配置 / 成品接口 / 前端页面）已存进 `fork-archive/`，订阅里指向 fork 成品文件的地址会自动改指这里的归档副本。
 
 ## 处理规则
 

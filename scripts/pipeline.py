@@ -192,6 +192,37 @@ PARSERS = {
     "single": extract_from_auto,
 }
 
+# 三个 fork 已全量归档到本仓库 fork-archive/。清单里若有订阅指向这些 fork 的
+# 成品文件（tvbox/*.json、output/*.json 等），统一改指本仓库归档副本，
+# 这样 fork 仓库删除后订阅依旧可用（上游刷新也冲不掉这层重写）。
+_FORK_ARCHIVE_RE = re.compile(
+    r'(?:gh-proxy\.com/)?https?://(?:raw\.)?github(?:usercontent)?\.com/liu666666667/'
+    r'(tvbox-api-backup|tvbox-ysc-config|awesome-zhuiju-free)/'
+    r'(?:blob/|raw/|refs/heads/)?[^/]+/'
+    r'(.+)'
+)
+
+
+def rewrite_fork_url(u):
+    """把指向三个 fork 成品文件的订阅 URL 改指本仓库 fork-archive 归档副本。"""
+    if not isinstance(u, str):
+        return u
+    m = _FORK_ARCHIVE_RE.search(u)
+    if not m:
+        return u
+    repo, path = m.group(1), m.group(2)
+    path = urllib.parse.unquote(path).split("?")[0].rstrip("/")
+    enc = urllib.parse.quote(path, safe="/")
+    return ("https://gh-proxy.com/https://raw.githubusercontent.com/"
+            "liu666666667/hebingyingshi/main/fork-archive/%s/%s" % (repo, enc))
+
+
+def rewrite_lines(lines):
+    for ln in lines:
+        if isinstance(ln, dict) and isinstance(ln.get("urls"), list):
+            ln["urls"] = [rewrite_fork_url(u) for u in ln["urls"]]
+    return lines
+
 
 def fetch_manifest(spec):
     """抓一个清单源的入口文件，解析成行列表。
@@ -210,7 +241,7 @@ def fetch_manifest(spec):
         try:
             with open(p, encoding="utf-8") as f:
                 text = f.read()
-            return parser(text), []
+            return rewrite_lines(parser(text)), []
         except Exception as e:
             return [], ["local_path %s: %s" % (lp, str(e)[:50])]
     mf = spec.get("manifest")          # 本地固化文件名（单文件源）
@@ -263,10 +294,10 @@ def fetch_manifest(spec):
             text = fresh.get(fb) if fb else None
         if text:
             try:
-                lines.extend(parser(text))
+                lines.extend(rewrite_lines(parser(text)))
             except Exception as e:
                 errors.append("parse %s: %s" % (os.path.basename(local), str(e)[:50]))
-    return lines, errors
+    return rewrite_lines(lines), errors
 
 
 # ---------------- 线路内容抓取（站点级） ----------------
