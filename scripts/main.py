@@ -214,6 +214,8 @@ def main():
                 stable_sites.append(s)
             if len(stable_sites) >= cap:
                 break
+    # 稳定版强制不超过全量版上限，避免遗留产物导致 stable > final
+    stable_sites = stable_sites[:cap]
     P.save_json(os.path.join(OUTPUT, "stable.json"), {"sites": stable_sites, "spider": top_spider})
 
     # 多仓订阅
