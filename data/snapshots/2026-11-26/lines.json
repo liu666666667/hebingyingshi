@@ -284,9 +284,9 @@
   {
     "name": "",
     "urls": [
-      "https://gh-proxy.com/https://github.com/liu666666667/tvbox-api-backup/blob/main/tvbox/海量采集聚合接口.json",
-      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/tvbox-ysc-config/refs/heads/main/output/单仓聚合.json",
-      "https://gh-proxy.com/https://github.com/liu666666667/tvbox-api-backup/blob/main/tvbox/海量py聚合接口.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/fork-archive/tvbox-api-backup/tvbox/%E6%B5%B7%E9%87%8F%E9%87%87%E9%9B%86%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/fork-archive/tvbox-ysc-config/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+      "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/fork-archive/tvbox-api-backup/tvbox/%E6%B5%B7%E9%87%8Fpy%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
       "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/fantaiying/tv.json",
       "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu1/m.json",
       "https://gh-proxy.com/https://raw.githubusercontent.com/liu666666667/yingshicang/refs/heads/master/dianying/xianlu2/jx.json",
@@ -458,15 +458,6 @@
     "origin": "yingshi_auto"
   },
   {
-    "name": "raw.githack.com/Jamin-f/tvbox-config/main/tvbox.json",
-    "urls": [
-      "https://raw.githack.com/Jamin-f/tvbox-config/main/tvbox.json"
-    ],
-    "type": "single",
-    "tier": "discovered",
-    "origin": "yingshi_auto"
-  },
-  {
     "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.j",
     "urls": [
       "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-采集站.json"
@@ -578,6 +569,15 @@
     "name": "home.jundie.top:81/top98.json",
     "urls": [
       "http://home.jundie.top:81/top98.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "zhangqun1818.serv00.net/zq/api.json",
+    "urls": [
+      "https://zhangqun1818.serv00.net/zq/api.json"
     ],
     "type": "single",
     "tier": "discovered",
