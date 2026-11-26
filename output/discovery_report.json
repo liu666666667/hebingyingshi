@@ -1,10 +1,10 @@
 {
- "date": "2026-11-26 09:20:52",
+ "date": "2026-11-27 05:11:49",
  "channels": {
   "github": {
    "queries": 8,
    "repos": 18,
-   "candidates": 168
+   "candidates": 74
   },
   "ghcode": {
    "queries": 0,
@@ -13,8 +13,8 @@
   },
   "web": {
    "queries": 9,
-   "pages": 59,
-   "candidates": 22
+   "pages": 38,
+   "candidates": 53
   },
   "gitee": {
    "queries": 0,
@@ -30,13 +30,13 @@
    "lists": 0,
    "candidates": 0
   },
-  "candidates_total": 210,
-  "probed": 183,
-  "added_configs": 10,
-  "added_lives": 5,
+  "candidates_total": 162,
+  "probed": 138,
+  "added_configs": 5,
+  "added_lives": 1,
   "pruned": 0,
-  "auto_configs": 45,
-  "auto_lives": 9,
-  "elapsed_sec": 159.4
+  "auto_configs": 50,
+  "auto_lives": 10,
+  "elapsed_sec": 91.6
  }
 }

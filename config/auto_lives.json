@@ -9,7 +9,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 11512
   },
@@ -22,9 +22,22 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 2197
+  },
+  {
+   "id": "auto_rawgithubuserc_32238e",
+   "name": "raw.githubusercontent.com/niubihu1/tvbox/main/live.txt",
+   "type": "live",
+   "urls": [
+    "https://raw.githubusercontent.com/niubihu1/tvbox/main/live.txt"
+   ],
+   "channel": "github",
+   "first_seen": "2026-11-27 05:11:49",
+   "last_ok": "2026-11-27 05:11:49",
+   "fail_streak": 0,
+   "score": 2104
   },
   {
    "id": "auto_rawgithubuserc_1b380c",
@@ -35,7 +48,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 1955
   },
@@ -48,7 +61,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:13",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 1619
   },
@@ -61,7 +74,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:13",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 1303
   },
@@ -74,7 +87,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 1226
   },
@@ -87,9 +100,9 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
-   "score": 1077
+   "score": 1135
   },
   {
    "id": "auto_rawgithubuserc_f83ec4",
@@ -100,7 +113,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:39:54",
-   "last_ok": "2026-11-26 09:19:13",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 473
   },
@@ -113,11 +126,11 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:13",
+   "last_ok": "2026-11-27 05:11:17",
    "fail_streak": 0,
    "score": 24
   }
  ],
- "updated_at": "2026-11-26 09:20:52",
+ "updated_at": "2026-11-27 05:11:49",
  "note": "自动全网搜索发现并维护（scripts/discover.py）：新源自动纳入、失效源自动淘汰，无需人工维护。"
 }

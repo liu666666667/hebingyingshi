@@ -9,7 +9,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 4038
   },
@@ -22,7 +22,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 1630
   },
@@ -35,9 +35,9 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-25 20:09:53",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
-   "score": 1516
+   "score": 1604
   },
   {
    "id": "auto_rawgithubuserc_694e46",
@@ -48,9 +48,22 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 298
+  },
+  {
+   "id": "auto_rawgithubuserc_cb7bdf",
+   "name": "raw.githubusercontent.com/liu673cn/box/main/m.json",
+   "type": "single",
+   "urls": [
+    "https://raw.githubusercontent.com/liu673cn/box/main/m.json"
+   ],
+   "channel": "web",
+   "first_seen": "2026-11-27 05:11:49",
+   "last_ok": "2026-11-27 05:11:49",
+   "fail_streak": 0,
+   "score": 234
   },
   {
    "id": "auto_rawgithubuserc_979583",
@@ -61,7 +74,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 194
   },
@@ -74,9 +87,9 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-25 20:09:53",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
-   "score": 181
+   "score": 189
   },
   {
    "id": "auto_rawgithubuserc_ce5189",
@@ -87,7 +100,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 165
   },
@@ -100,7 +113,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-25 20:09:53",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 161
   },
@@ -113,7 +126,7 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 21:40:31",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 161
   },
@@ -126,7 +139,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 158
   },
@@ -139,7 +152,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
    "score": 151
   },
@@ -152,9 +165,9 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-25 20:09:53",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:09",
    "fail_streak": 0,
-   "score": 148
+   "score": 131
   },
   {
    "id": "auto_15015852248_b4fab8",
@@ -165,7 +178,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 123
   },
@@ -178,9 +191,22 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 21:40:31",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 115
+  },
+  {
+   "id": "auto_6800kstorevip_b55d02",
+   "name": "6800.kstore.vip/fish.json",
+   "type": "single",
+   "urls": [
+    "https://6800.kstore.vip/fish.json"
+   ],
+   "channel": "web",
+   "first_seen": "2026-11-27 05:11:49",
+   "last_ok": "2026-11-27 05:11:49",
+   "fail_streak": 0,
+   "score": 111
   },
   {
    "id": "auto_top_5a5135",
@@ -191,7 +217,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 104
   },
@@ -204,7 +230,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 101
   },
@@ -217,7 +243,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 93
   },
@@ -230,7 +256,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:09",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 87
   },
@@ -243,7 +269,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 77
   },
@@ -256,7 +282,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 64
   },
@@ -269,7 +295,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 63
   },
@@ -282,7 +308,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 59
   },
@@ -295,7 +321,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:39:54",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
    "score": 59
   },
@@ -308,9 +334,9 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:12",
    "fail_streak": 0,
-   "score": 55
+   "score": 57
   },
   {
    "id": "auto_playiptv365org_8dbcb2",
@@ -321,7 +347,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 55
   },
@@ -334,7 +360,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 54,
    "expand": true
@@ -348,7 +374,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 50
   },
@@ -361,7 +387,7 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 21:40:31",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 50
   },
@@ -374,7 +400,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 49
   },
@@ -387,7 +413,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 48
   },
@@ -400,7 +426,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 48
   },
@@ -413,7 +439,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 20:53:20",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 46
   },
@@ -426,7 +452,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 09:20:52",
-   "last_ok": "2026-11-26 09:20:52",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 45
   },
@@ -439,7 +465,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 21:26:11",
-   "last_ok": "2026-11-26 09:19:11",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 43
   },
@@ -452,7 +478,7 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 21:26:11",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 36
   },
@@ -465,7 +491,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:15",
    "fail_streak": 0,
    "score": 33
   },
@@ -478,7 +504,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 21:26:11",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 28
   },
@@ -491,7 +517,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 21:26:11",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 27
   },
@@ -504,7 +530,7 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 21:26:11",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 25
   },
@@ -517,9 +543,36 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-25 21:26:11",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 24
+  },
+  {
+   "id": "auto_479682415188_7b77da",
+   "name": "47.96.82.41:5188/rose/18/xgg.json",
+   "type": "single",
+   "urls": [
+    "http://47.96.82.41:5188/rose/18/xgg.json"
+   ],
+   "channel": "web",
+   "first_seen": "2026-11-27 05:11:49",
+   "last_ok": "2026-11-27 05:11:49",
+   "fail_streak": 0,
+   "score": 24
+  },
+  {
+   "id": "auto_rawgithubuserc_e1d505",
+   "name": "raw.githubusercontent.com/niubihu1/tvbox/main/自用仓库.txt",
+   "type": "multi",
+   "urls": [
+    "https://raw.githubusercontent.com/niubihu1/tvbox/main/自用仓库.txt"
+   ],
+   "channel": "github",
+   "first_seen": "2026-11-27 05:11:49",
+   "last_ok": "2026-11-27 05:11:49",
+   "fail_streak": 0,
+   "score": 22,
+   "expand": true
   },
   {
    "id": "auto_zhangqun1818se_46ae61",
@@ -530,9 +583,23 @@
    ],
    "channel": "seeds",
    "first_seen": "2026-11-26 07:26:52",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 19
+  },
+  {
+   "id": "auto_rawgithubuserc_40e79e",
+   "name": "raw.githubusercontent.com/niubihu1/tvbox/main/tv8.json",
+   "type": "multi",
+   "urls": [
+    "https://raw.githubusercontent.com/niubihu1/tvbox/main/tv8.json"
+   ],
+   "channel": "github",
+   "first_seen": "2026-11-27 05:11:49",
+   "last_ok": "2026-11-27 05:11:49",
+   "fail_streak": 0,
+   "score": 16,
+   "expand": true
   },
   {
    "id": "auto_rawgithubuserc_893c6b",
@@ -543,7 +610,7 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 21:26:11",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 15,
    "expand": true
@@ -557,7 +624,7 @@
    ],
    "channel": "web",
    "first_seen": "2026-11-25 21:40:31",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 15,
    "expand": true
@@ -571,7 +638,7 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:39:54",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 3,
    "expand": true
@@ -585,12 +652,12 @@
    ],
    "channel": "github",
    "first_seen": "2026-11-26 07:39:54",
-   "last_ok": "2026-11-26 09:19:12",
+   "last_ok": "2026-11-27 05:11:16",
    "fail_streak": 0,
    "score": 3,
    "expand": true
   }
  ],
- "updated_at": "2026-11-26 09:20:52",
+ "updated_at": "2026-11-27 05:11:49",
  "note": "自动全网搜索发现并维护（scripts/discover.py）：新源自动纳入、失效源自动淘汰，无需人工维护。"
 }
