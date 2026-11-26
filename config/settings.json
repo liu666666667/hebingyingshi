@@ -6,7 +6,7 @@
   "revive_days": 7,
   "snapshot_fallback_max_days": 3,
   "drop_alert_pct": 30,
-  "max_sites_single": 1500,
+  "max_sites_single": 999999,
   "probe_timeout": 8,
   "probe_workers": 12,
   "probe_enabled": true,
