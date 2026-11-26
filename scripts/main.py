@@ -95,19 +95,19 @@ def main():
 
     # ---- 2. 抓站点内容（只抓可信源全部 + discovered 中未禁用的） ----
     def load_sites(ln):
-        sp, sites, ok = P.fetch_line_sites(ln)
-        return ln, sp, sites, ok
+        sp, sites, ok, extras = P.fetch_line_sites(ln)
+        return ln, sp, sites, ok, extras
 
     # 限制并发，避免打爆网络
     workers = 10
-    line_data = {}  # key -> {spider, sites, ok, reason}
+    line_data = {}  # key -> {spider, sites, ok, reason, extras}
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futs = {ex.submit(load_sites, ln): ln for ln in all_lines}
         for f in as_completed(futs):
-            ln, sp, sites, ok = f.result()
+            ln, sp, sites, ok, extras = f.result()
             k = P.line_key(ln.get("urls"))
             reason = guard.source_reason(ln, sp, sites) if ok else ("unreachable" if not ok else None)
-            line_data[k] = {"line": ln, "spider": sp, "sites": sites, "ok": ok, "reason": reason}
+            line_data[k] = {"line": ln, "spider": sp, "sites": sites, "ok": ok, "reason": reason, "extras": extras}
 
     # ---- 3. 健康检测 + 失效淘汰（按历史 fail_streak） ----
     prev_state_lines = state["lines"]
@@ -194,9 +194,20 @@ def main():
         spider_votes[sp] = spider_votes.get(sp, 0) + 1
     top_spider = max(spider_votes, key=spider_votes.get) if spider_votes else guard.default_spider
 
+    # 合并完整配置字段(parses/rules/wallpaper/logo...)：active_lines 已按 trusted 在前排序，
+    # 顺序合并即"可信优先"，列表去重、标量先到先得。恢复 tvbox-api 原版接口的完整体验。
+    config_extras = {}
+    for k, ld, st in active_lines:
+        P.merge_extras(config_extras, ld.get("extras"))
+    log("完整字段合并: parses=%d rules=%d wallpaper=%s logo=%s" %
+        (len(config_extras.get("parses", [])), len(config_extras.get("rules", [])),
+         bool(config_extras.get("wallpaper")), bool(config_extras.get("logo"))))
+
     # ---- 5. 产出 ----
-    # 全量版 single
-    final = {"sites": all_sites, "spider": top_spider}
+    # 全量版 single：站点用合并去重结果，其余字段用完整配置合并结果
+    final = dict(config_extras)
+    final["sites"] = all_sites
+    final["spider"] = top_spider
     P.save_json(os.path.join(OUTPUT, "final.json"), final)
 
     # 稳定版：首日全量可用；之后只放 ok_days>=stable_min_days 或 trusted 来源的站点
@@ -227,7 +238,10 @@ def main():
                 break
     # 稳定版强制不超过全量版上限，避免遗留产物导致 stable > final
     stable_sites = stable_sites[:cap]
-    P.save_json(os.path.join(OUTPUT, "stable.json"), {"sites": stable_sites, "spider": top_spider})
+    stable_out = dict(config_extras)
+    stable_out["sites"] = stable_sites
+    stable_out["spider"] = top_spider
+    P.save_json(os.path.join(OUTPUT, "stable.json"), stable_out)
 
     # 多仓订阅
     multi_urls = []
