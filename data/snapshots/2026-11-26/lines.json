@@ -314,6 +314,24 @@
     "origin": "yingshicang"
   },
   {
+    "name": "raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+    "urls": [
+      "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox_reco",
+    "urls": [
+      "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox_recommended.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.jso",
     "urls": [
       "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播合集.json"
@@ -332,9 +350,27 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "raw.githubusercontent.com/hebijunge/tvbox-config/main/short.json",
+    "urls": [
+      "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/short.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.j",
     "urls": [
       "https://raw.githubusercontent.com/thevip001/tvbox-agg/main/聚合接口/点播-JS站.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/maoystv/6/main/000.json",
+    "urls": [
+      "https://raw.githubusercontent.com/maoystv/6/main/000.json"
     ],
     "type": "single",
     "tier": "discovered",
@@ -353,6 +389,15 @@
     "name": "qist.wyfc.qzz.io/jsm.json",
     "urls": [
       "https://qist.wyfc.qzz.io/jsm.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/he",
+    "urls": [
+      "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
     ],
     "type": "single",
     "tier": "discovered",
@@ -407,6 +452,15 @@
     "name": "clun.top/box.json",
     "urls": [
       "https://clun.top/box.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "raw.githubusercontent.com/chitue/dongliTV/main/api.json",
+    "urls": [
+      "https://raw.githubusercontent.com/chitue/dongliTV/main/api.json"
     ],
     "type": "single",
     "tier": "discovered",
@@ -512,9 +566,36 @@
     "origin": "yingshi_auto"
   },
   {
+    "name": "raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.",
+    "urls": [
+      "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "dxawi.github.io/0/0.json",
+    "urls": [
+      "https://dxawi.github.io/0/0.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
     "name": "ztha.top/TVBox/thdjk.json",
     "urls": [
       "https://ztha.top/TVBox/thdjk.json"
+    ],
+    "type": "single",
+    "tier": "discovered",
+    "origin": "yingshi_auto"
+  },
+  {
+    "name": "android.lushunming.qzz.io/json/index.json",
+    "urls": [
+      "https://android.lushunming.qzz.io/json/index.json"
     ],
     "type": "single",
     "tier": "discovered",

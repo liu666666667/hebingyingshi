@@ -1,5 +1,54 @@
 [
   {
+    "key": "51短剧",
+    "name": "🦋 [成人短剧]51短剧.py｜🔞",
+    "type": 3,
+    "api": "https://lytvs.top/py/51duanju.py",
+    "ext": "",
+    "category": "福利",
+    "group": "短剧"
+  },
+  {
+    "key": "狂飙短剧",
+    "name": "🦋 [成人短剧]狂飙短剧.py｜🔞",
+    "type": 3,
+    "api": "https://lytvs.top/py/kuangbiaoduanju.py",
+    "ext": "",
+    "category": "福利",
+    "group": "短剧"
+  },
+  {
+    "key": "wddj",
+    "name": "🦋 [成人短剧]黄豆短剧.py 有🔞",
+    "type": 3,
+    "api": "https://lytvs.top/py/huangdouduanju.py",
+    "ext": "",
+    "category": "福利",
+    "group": "短剧"
+  },
+  {
+    "key": "live",
+    "name": "💻电视直播",
+    "type": 3,
+    "api": "https://gh.halonice.com/https://github.com/c120487/00/raw/main/api/直播转点播.js",
+    "ext": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/Peter1$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05151.txt#Peter2$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05152.txt#Peter3$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05153.txt#FongMi$https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/txt/adult.txt#Gaotian$https://ghproxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/listx.txt",
+    "group": "其他"
+  },
+  {
+    "key": "5005075157250987989",
+    "name": "aliluya1977 [快]",
+    "type": 3,
+    "api": "https://gh.halonice.com/https://raw.githubusercontent.com/aliluya1977/TVBox/35b1b50ee77ee4e422fc2b9cb83ac0668016305e/xm.json",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": {
+      "health_score": 99.97,
+      "latency_ms": 53
+    },
+    "group": "其他"
+  },
+  {
     "key": "py_porn",
     "name": "肉视频[py]",
     "type": 3,
