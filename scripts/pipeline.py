@@ -192,6 +192,88 @@ PARSERS = {
     "single": extract_from_auto,
 }
 
+
+# ---------------- 完整配置字段保留（合并 tvbox-api 的"原样保存"优点） ----------------
+# yingshi 原本只取 sites/spider，parses/rules/wallpaper 等全丢。这里把这些字段
+# 从每条线路配置里抽出来，按 trusted 优先去重合并后写进产出，恢复原版接口的完整体验。
+EXTRA_FIELDS = ("parses", "rules", "wallpaper", "logo", "livePlayHeaders",
+                "md5", "name", "homeSite", "homeLogo", "homeBg",
+                "homeSearch", "homeRec", "searchable")
+_LIST_EXTRA_KEYS = ("parses", "rules")
+
+
+def _rel_url(base_url, val):
+    """保守相对路径重写：只处理看起来像相对路径(含/)的引用，标识符(Demo/ijk)原样留。"""
+    if not isinstance(val, str) or not val or not base_url:
+        return val
+    v = val.strip()
+    if v.startswith(("http://", "https://", "//", "data:", "file://", "clan://", "{", "[")):
+        return val
+    if "/" not in v:
+        return val
+    return _join_base(base_url, v)
+
+
+def _absolutize_extras(extras, base_url):
+    if not base_url or not extras:
+        return extras
+    for p in extras.get("parses") or []:
+        if isinstance(p, dict):
+            if isinstance(p.get("url"), str):
+                p["url"] = _rel_url(base_url, p["url"])
+            ext = p.get("ext")
+            if isinstance(ext, dict):
+                for k in ("jar", "api", "url"):
+                    if isinstance(ext.get(k), str):
+                        ext[k] = _rel_url(base_url, ext[k])
+    for key in ("wallpaper", "logo"):
+        v = extras.get(key)
+        if isinstance(v, str):
+            extras[key] = _rel_url(base_url, v)
+        elif isinstance(v, list):
+            extras[key] = [_rel_url(base_url, x) if isinstance(x, str) else x for x in v]
+    return extras
+
+
+def collect_extras(data, base_url=None):
+    """从一个已解析的配置 dict 抽出需保留的额外字段（深拷贝，避免改到原对象）。"""
+    if not isinstance(data, dict):
+        return {}
+    out = {}
+    for k in EXTRA_FIELDS:
+        v = data.get(k)
+        if v in (None, "", [], {}):
+            continue
+        out[k] = json.loads(json.dumps(v, ensure_ascii=False)) if isinstance(v, (dict, list)) else v
+    return _absolutize_extras(out, base_url)
+
+
+def _extra_sig(item):
+    if isinstance(item, dict):
+        return str(item.get("url") or item.get("name") or json.dumps(item, ensure_ascii=False, sort_keys=True))
+    return json.dumps(item, ensure_ascii=False, sort_keys=True)
+
+
+def merge_extras(target, src):
+    """把 src 的额外字段并入 target：列表类(parses/rules)按 url/name 去重合并，标量先到先得。
+    trusted 线路排在前，故先到者即 trusted，符合'可信优先'。"""
+    if not src:
+        return target
+    for k, v in src.items():
+        if k in _LIST_EXTRA_KEYS and isinstance(v, list):
+            cur = target.setdefault(k, [])
+            seen = set(_extra_sig(x) for x in cur)
+            for item in v:
+                sig = _extra_sig(item)
+                if sig and sig in seen:
+                    continue
+                if sig:
+                    seen.add(sig)
+                cur.append(item)
+        elif k not in target and v not in (None, "", [], {}):
+            target[k] = v
+    return target
+
 # 三个 fork 已全量归档到本仓库 fork-archive/。清单里若有订阅指向这些 fork 的
 # 成品文件（tvbox/*.json、output/*.json 等），统一改指本仓库归档副本，
 # 这样 fork 仓库删除后订阅依旧可用（上游刷新也冲不掉这层重写）。
@@ -302,11 +384,12 @@ def fetch_manifest(spec):
 
 # ---------------- 线路内容抓取（站点级） ----------------
 def fetch_line_sites(line, timeout=8):
-    """抓一条线路的配置内容，返回 (spider, sites[], ok)。多仓则递归展开子仓。"""
+    """抓一条线路的配置内容，返回 (spider, sites[], ok, extras)。多仓则递归展开子仓。
+    extras 为完整配置字段(parses/rules/wallpaper/logo...)，供产出阶段合并保留。"""
     urls = line.get("urls") or []
     if not urls:
-        return "", [], False
-    spider, sites, ok = "", [], False
+        return "", [], False, {}
+    spider, sites, ok, extras = "", [], False, {}
     for u in urls[:3]:  # 最多试 3 个镜像
         try:
             _, used, text = fetch_text_with_fallback([u], retries=0, app_ua=True)
@@ -314,7 +397,7 @@ def fetch_line_sites(line, timeout=8):
             if not d:
                 continue
             if is_multi_warehouse(d):
-                # 展开子仓：逐个抓，合并站点
+                # 展开子仓：逐个抓，合并站点与完整字段
                 subs = d["urls"]
                 for s in subs[:30]:
                     su = s if isinstance(s, str) else (s.get("url") if isinstance(s, dict) else None)
@@ -327,6 +410,7 @@ def fetch_line_sites(line, timeout=8):
                             sd = absolutize(sd, su)
                             sites.extend(sd["sites"])
                             spider = spider or sd.get("spider", "")
+                            merge_extras(extras, collect_extras(sd, su))
                     except Exception:
                         continue
                 ok = bool(sites)
@@ -334,12 +418,13 @@ def fetch_line_sites(line, timeout=8):
                 d = absolutize(d, used)
                 sites = d["sites"]
                 spider = d.get("spider", "") or ""
+                merge_extras(extras, collect_extras(d, used))
                 ok = True
             if ok:
                 break
         except Exception:
             continue
-    return spider, sites, ok
+    return spider, sites, ok, extras
 
 
 # ---------------- 过滤与去重 ----------------
