@@ -1,10 +1,10 @@
 {
   "date": "2026-11-26",
-  "added": 992,
-  "removed": 992,
+  "added": 146,
+  "removed": 3,
   "revived": 0,
   "isolated": 5,
   "disabled": 16,
-  "total_sites": 1500,
-  "stable_sites": 1500
+  "total_sites": 1643,
+  "stable_sites": 1643
 }
