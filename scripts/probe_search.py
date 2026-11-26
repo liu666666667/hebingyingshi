@@ -37,7 +37,10 @@ def collect_sites():
 def api_with_wd(api, wd):
     p = urllib.parse.urlsplit(api)
     base = urllib.parse.urlunsplit((p.scheme, p.netloc, p.path, "", ""))
-    return base + "?wd=" + urllib.parse.quote(wd)
+    # 苹果CMS标准搜索：ac=videolist + wd；cjapi 类只认 wd
+    if "cjapi" in base:
+        return base + "?wd=" + urllib.parse.quote(wd)
+    return base + "?ac=videolist&wd=" + urllib.parse.quote(wd)
 
 
 def names(api, wd, timeout=9):
