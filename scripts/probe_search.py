@@ -61,22 +61,33 @@ def probe(item):
         a = names(api, rand_word("zzq"))
         b = names(api, rand_word("qxw"))
     except Exception:
-        return None
+        return (host, "err")
+    if not a:
+        return (host, "no_data")
     # 两个毫不相干的不存在词，若返回相同且非空 -> 搜索被忽略 = 假搜索
     if len(a) >= 2 and a[:2] == b[:2]:
-        return host
-    return None
+        return (host, "fake")
+    return (host, "ok")
 
 
 def main():
+    from collections import Counter
     items = collect_sites()
     print("[PROBE] 采集站 host 数: %d" % len(items))
-    fake = []
+    stats, fake = Counter(), []
     with concurrent.futures.ThreadPoolExecutor(max_workers=24) as ex:
-        for r in ex.map(probe, items):
-            if r:
-                fake.append(r)
-    fake = sorted(set(fake))
+        for host, status in ex.map(probe, items):
+            stats[status] += 1
+            if status == "fake":
+                fake.append(host)
+    print("[PROBE] 探测统计: 正常=%d 假搜索=%d 无数据=%d 连不上/错误=%d" %
+          (stats["ok"], stats["fake"], stats["no_data"], stats["err"]))
+    # 合并旧报告，避免重跑丢失
+    try:
+        old = json.load(open(REPORT, encoding="utf-8")).get("fake_domains", [])
+    except Exception:
+        old = []
+    fake = sorted(set(fake) | set(old))
     print("[PROBE] 假搜索站 %d 个:" % len(fake))
     for h in fake:
         print("[PROBE]   FAKE", h)
