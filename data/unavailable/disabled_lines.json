@@ -106,5 +106,11 @@
     "name": "",
     "reason": "image-spider",
     "last_ok": null
+  },
+  {
+    "key": "gh-proxy.com/https://raw.githubusercontent.com/liu666666667/hebingyingshi/main/fork-archive/tvbox-api-backup/tvbox/%E6%B5%B7%E9%87%8F%E9%87%87%E9%9B%86%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
+    "name": "",
+    "reason": "fail_streak",
+    "last_ok": null
   }
 ]
